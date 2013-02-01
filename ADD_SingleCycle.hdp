@@ -1,0 +1,11 @@
+[hdl]
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\hdl
+[hds]
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\hds
+[hds_settings]
+default_library = ADD_SingleCycle_lib
+version = 2
+[library_type]
+ADD_SingleCycle_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp
