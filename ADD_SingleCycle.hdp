@@ -1,7 +1,9 @@
+[DesignChecker]
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\designcheck
 [hdl]
-ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\hdl
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR/ADD_SingleCycle_lib/hdl
 [hds]
-ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\hds
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR/ADD_SingleCycle_lib/hds
 [hds_settings]
 default_library = ADD_SingleCycle_lib
 version = 2

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mux4to1arch
+DEFAULT_FILE atom mux4to1_mux4to1arch.vhd
