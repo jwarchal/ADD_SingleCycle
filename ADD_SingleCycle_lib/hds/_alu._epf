@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom aluarch
+DEFAULT_FILE atom alu_aluarch.vhd
