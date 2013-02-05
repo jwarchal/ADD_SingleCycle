@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom PCarch
+DEFAULT_FILE atom PC_PCarch.vhd
