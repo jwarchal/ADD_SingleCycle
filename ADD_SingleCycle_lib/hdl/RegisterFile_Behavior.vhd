@@ -6,7 +6,8 @@
 --          at - 08:24:10 02/ 8/2013
 --
 -- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
---
+-- REGISTER FILE
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
