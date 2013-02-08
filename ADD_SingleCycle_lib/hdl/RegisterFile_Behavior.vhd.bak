@@ -36,7 +36,7 @@ BEGIN
         rd0 <= reg_file(Conv_INTEGER(unsigned(ra0)));
         rd1 <= reg_file(Conv_INTEGER(unsigned(ra1)));
         
-   			  --writes data to destreg (ra0) if write enable(w_en) is 1
+   			  --writes data to destreg(ra0) if write enable(w_en) is 1
    			  IF (w_en='1') THEN
 			  reg_file(Conv_INTEGER(unsigned(ra0))) := wd;
 			  END IF;
