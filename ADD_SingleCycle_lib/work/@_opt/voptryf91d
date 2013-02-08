@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+T_opt
+V?1bT98@5_<:zSgP8iE;=R0
+04 12 8 work registerfile behavior 1
+=4-001c4275de70-511508c2-138-760
+o-quiet +acc -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
+n@_opt
+OE;O;10.1c;51
+Eregisterfile
+Z1 w1360332988
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+Z6 8//psf/Home/Desktop/ECE/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z7 F//psf/Home/Desktop/ECE/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+l0
+L14
+VDkJ4LzLP8WX3_4n3Sz89=1
+Z8 OE;C;10.1c;51
+33
+Z9 !s108 1360332990.078000
+Z10 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/Files0|
+Z11 !s107 //psf/Home/Desktop/ECE/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
+Z12 o-work ADD_SingleCycle_lib -nologo -2008
+Z13 tExplicit 1
+!s100 jigzJ@mWSQHHNIa;ik<eO0
+!i10b 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 12 registerfile 0 22 DkJ4LzLP8WX3_4n3Sz89=1
+l26
+L24
+VIF2D<[W0AfU>a<VaL3Ln^2
+R8
+33
+R9
+R10
+R11
+R12
+R13
+!s100 BdN<m<lNz9D@[=GZ?256z1
+!i10b 1
