@@ -15,8 +15,8 @@ ENTITY ControlUnit IS
   
   PORT (InstMem : IN std_logic_vector (15 DOWNTO 0);
         ConditionCode: IN std_logic_vector (3 DOWNTO 0);
-        PC_mux : OUT std_logic_vector (1 DOWNTO 0);
-        RF_mux, ALU_L_mux, ALU_R_mux : OUT std_logic );
+        PC_mux, ALU_R_mux, ALU_L_mux : OUT std_logic_vector (1 DOWNTO 0);
+        RF_mux, DM_e, RF_e : OUT std_logic );
         
 END ENTITY ControlUnit;
 
@@ -39,106 +39,106 @@ BEGIN
     IF (topBits = "000") THEN
       PC_mux <=  "11";
       RF_mux <= '0';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      ALU_L_mux <= "00";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '0';
     END IF;
     
     --LD
     IF (topBits = "001") THEN
-      PC_mux <= "10"; 
+      PC_mux <= "11"; 
       RF_mux <= '1';
-      ALU_L_mux <= '1';
-      ALU_R_mux <= '1';
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '1';
     END IF;
     
     --ST
     IF (topBits = "010") THEN
-      PC_mux <=  "10";
+      PC_mux <=  "11";
       RF_mux <= '1';
-      ALU_L_mux <= '1';
-      ALU_R_mux <= '1';
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "00";
+      DM_e <= '1';
+      RF_e <= '0';
     END IF;
     
     --MOV
     IF (topBits = "011") THEN 
-      PC_mux <=  "10";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      PC_mux <=  "11";
+      RF_mux <= '0';
+      ALU_L_mux <= "00";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '1';
     END IF;
     
-    --LIl, LIH
+    --LIL, LIH
     IF (topBits = "100" AND eightBit = '0') THEN
-      PC_mux <=  "10";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      PC_mux <=  "11";
+      RF_mux <= '0';
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "10";
+      DM_e <= '0';
+      RF_e <='1';
     ELSIF (eightBit = '1') THEN
       PC_mux <=  "11";
       RF_mux <= '0';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';  
+      ALU_L_mux <= "11";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '1';  
     END IF;
     
     --ADD, ADC, SUB, ABC, AND, OR, XOR, NOT
     IF (topBits = "101") THEN
-      PC_mux <=  "10";
-      RF_mux <= '0';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      PC_mux <=  "11";
+      RF_mux <= "00";
+      ALU_L_mux <= "00";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '1';
     END IF;
     
     --SL, SRL, SRA, RRA, RR, RL
     IF (topBits = "110" ) THEN
-      PC_mux <=  "10";
-      RF_mux <= '0';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      PC_mux <=  "11";
+      RF_mux <= "00";
+      ALU_L_mux <= "00";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '1';
     END IF;
     
     --JMP
     IF (topBits = "111"  AND eightBit = "0") THEN
       PC_mux <=  "00";
-      RF_mux <= '0';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      RF_mux <= "00";
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "00";
+      DM_e <= '0';
+      RF_e <= '0';
       
     --BR
     ELSIF ( twelveToNine = "0000") THEN
       PC_mux <=  "01";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      RF_mux <= '0';
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "01";
+      DM_e <= '0';
+      RF_e <= '0';
     
     --BC
-    ELSIF ( twelveToNine = "1000" ) THEN
+    ELSIF ( twelveToNine = ConditionCode ) THEN
       PC_mux <=  "01";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
-    
-    --BO
-    ELSIF ( twelveToNine = "0100" ) THEN
-      PC_mux <=  "01";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
-      
-    --BN
-    ELSIF ( twelveToNine = "0010" ) THEN
-      PC_mux <=  "01";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
-    
-    --BZ
-    ELSIF ( twelveToNine = "0001" ) THEN
-      PC_mux <=  "01";
-      RF_mux <= '1';
-      ALU_L_mux <= '0';
-      ALU_R_mux <= '0';
+      RF_mux <= '0';
+      ALU_L_mux <= "01";
+      ALU_R_mux <= "01";
+      DM_e <= '0';
+      RF_e <= '0';
     END IF;
-    
     
   END PROCESS;
 END ARCHITECTURE Behavior;
