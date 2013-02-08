@@ -117,7 +117,7 @@ BEGIN
       ALU_L_mux <= '0';
       ALU_R_mux <= '0';
     
-    --BO
+    --BO, coooool test
     ELSIF ( twelveToNine = "0100" ) THEN
       PC_mux <=  "01";
       RF_mux <= '1';
