@@ -12,10 +12,27 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
 ENTITY Hookup IS
+  PORT(jump: IN std_logic_vector(15 DOWNTO 0);
+  clock: IN std_logic);
+  
 END ENTITY Hookup;
 
 --
 ARCHITECTURE Hookuparch OF Hookup IS
+  SIGNAL PCin, PCout, PCincrement: std_logic_vector(15 DOWNTO 0);
+  SIGNAL jump: std_logic_vector(15 DOWNTO 0);
+  CONSTANT zero: std_logic_vector(15 DOWNTO 0):= "0000000000000000";
+  CONSTANT one: std_logic_vector(15 DOWNTO 0):= "0000000000000001";
+  
 BEGIN
+  PCMUX: ENTITY work.mux2to1(mux2to1arch)
+  PORT MAP(jump,PCincrement,PCin,PCMUXcontrol);
+    
+  PC: ENTITY work.PC(PCarch)
+  PORT MAP(PCin, PCout, clock, '1');
+    
+  Increment: ENTITY work.Increment(Incrementarch)
+  PORT MAP(PCout, PCincrement);
+  
 END ARCHITECTURE Hookuparch;
 
