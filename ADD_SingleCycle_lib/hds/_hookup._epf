@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Hookuparch
+DEFAULT_FILE atom Hookup_Hookuparch.vhd
