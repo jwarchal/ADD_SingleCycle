@@ -13,7 +13,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
 ENTITY RegisterFile IS
-  PORT(clk, w_en: IN std_logic;
+  PORT(w_en: IN std_logic;
     wd: IN std_logic_vector(15 DOWNTO 0);
     --ra0=dest reg addr(12:9)  ra1=src reg addr(8:5)
     ra0, ra1: IN std_logic_vector(3 DOWNTO 0);
@@ -26,7 +26,7 @@ ARCHITECTURE Behavior OF RegisterFile IS
   
 BEGIN
   
-		PROCESS(clk, w_en, wd, ra0, ra1)
+		PROCESS(w_en, ra0, ra1)
 				
 		--creates regfile of 16, 16-bit registers
 		TYPE reg_file_arr IS ARRAY(15 DOWNTO 0) OF std_logic_vector(15 DOWNTO 0); 
