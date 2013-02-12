@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Extendblockarch
+DEFAULT_FILE atom Extendblock_Extendblockarch.vhd

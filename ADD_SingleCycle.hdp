@@ -1,7 +1,9 @@
 [DesignChecker]
 ADD_SingleCycle_lib = $HDS_PROJECT_DIR/ADD_SingleCycle_lib/designcheck
 [ModelSim]
-ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\work
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR/ADD_SingleCycle_lib/work
+[Precision]
+ADD_SingleCycle_lib = $HDS_PROJECT_DIR\ADD_SingleCycle_lib\ps
 [hdl]
 ADD_SingleCycle_lib = $HDS_PROJECT_DIR/ADD_SingleCycle_lib/hdl
 [hds]
