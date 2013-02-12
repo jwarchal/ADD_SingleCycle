@@ -40,7 +40,6 @@ ARCHITECTURE Hookuparch OF Hookup IS
   
   --ALU signals
   SIGNAL Left, Right, ALUout: std_logic_vector(15 DOWNTO 0);
-  SIGNAL opcode: std_logic_vector(4 DOWNTO 0);
   SIGNAL cin: std_logic; --what is this?
   SIGNAL CCRvector: std_logic_vector(3 DOWNTO 0); --Didnt do this yet
   
@@ -77,7 +76,7 @@ BEGIN
   PORT MAP(zero, RD1, zero, PCout, Right, RMUX_control);
     
   ALU: ENTITY work.alu(aluarch)
-  PORT MAP(Left, Right, inst(2 DOWNTO 0), cin, ALUout, CCRvector);
+  PORT MAP(Left, Right, inst(14 DOWNTO 13) & inst(2 DOWNTO 0), cin, ALUout, CCRvector);
     
   Control: ENTITY work.ControlUnit(Behavior)
   PORT MAP(inst, CCRvector, PCMUX_control, RMUX_control, LMUX_control, MemMux_control);
