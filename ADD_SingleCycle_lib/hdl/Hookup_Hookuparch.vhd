@@ -22,9 +22,7 @@ ARCHITECTURE Hookuparch OF Hookup IS
   
   --PC crap
   SIGNAL PCin, PCout, PCincrement: std_logic_vector(15 DOWNTO 0);
-  SIGNAL jump: std_logic_vector(15 DOWNTO 0);
   CONSTANT zero: std_logic_vector(15 DOWNTO 0):= "0000000000000000";
-  CONSTANT one: std_logic_vector(15 DOWNTO 0):= "0000000000000001";
   
   --Memory Signals
   SIGNAL Mem_w_en: std_logic;
@@ -49,7 +47,7 @@ ARCHITECTURE Hookuparch OF Hookup IS
   
 BEGIN
   PCMUX: ENTITY work.mux2to1(mux2to1arch)
-  PORT MAP(jump,PCincrement,PCin,PCMUX_control);
+  PORT MAP(ALUout,PCincrement,PCin,PCMUX_control);
     
   PC: ENTITY work.PC(PCarch)
   PORT MAP(PCin, PCout, clock, '1');
@@ -79,7 +77,7 @@ BEGIN
   PORT MAP(Left, Right, inst(14 DOWNTO 13) & inst(2 DOWNTO 0), cin, ALUout, CCRvector);
     
   Control: ENTITY work.ControlUnit(Behavior)
-  PORT MAP(inst, CCRvector, PCMUX_control, RMUX_control, LMUX_control, MemMux_control);
+  PORT MAP(inst, CCRvector, PCMUX_control, RMUX_control, LMUX_control, MemMux_control, Mem_w_en, RF_w_en);
 
 END ARCHITECTURE Hookuparch;
 
