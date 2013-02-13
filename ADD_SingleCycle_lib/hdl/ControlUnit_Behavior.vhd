@@ -16,7 +16,7 @@ ENTITY ControlUnit IS
   PORT (InstMem : IN std_logic_vector (15 DOWNTO 0);
         ConditionCode: IN std_logic_vector (3 DOWNTO 0);
         ALU_R_mux, ALU_L_mux : OUT std_logic_vector (1 DOWNTO 0);
-        PC_mux, Mem_mux, Mem_en, RF_en : OUT std_logic);
+        PC_mux, RF_mux, Mem_en, RF_en : OUT std_logic);
         
 END ENTITY ControlUnit;
 
@@ -38,7 +38,7 @@ BEGIN
     --NOP
     IF (topBits = "000") THEN
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "00";
       ALU_R_mux <= "00";
       Mem_en <= '0';
@@ -48,7 +48,7 @@ BEGIN
     --LD
     IF (topBits = "001") THEN
       PC_mux <= '0'; 
-      Mem_mux <= '0';
+      RF_mux <= '1';
       ALU_L_mux <= "11";
       ALU_R_mux <= "10";
       Mem_en <= '0';
@@ -58,7 +58,7 @@ BEGIN
     --ST
     IF (topBits = "010") THEN
       PC_mux <=  '0';
-      Mem_mux <= '1';
+      RF_mux <= '0';
       ALU_L_mux <= "11";
       ALU_R_mux <= "10";
       Mem_en <= '1';
@@ -68,9 +68,9 @@ BEGIN
     --MOV
     IF (topBits = "011") THEN 
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "00";
-      ALU_R_mux <= "10";
+      ALU_R_mux <= "01";
       Mem_en <= '0';
       RF_en <= '1';
     END IF;
@@ -78,14 +78,14 @@ BEGIN
     --LIL, LIH
     IF (topBits = "100" AND eightBit = '0') THEN
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "01";
       ALU_R_mux <= "01";
       Mem_en <= '0';
       RF_en <='1';
     ELSIF (eightBit = '1') THEN
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "10";
       ALU_R_mux <= "01";
       Mem_en <= '0';
@@ -95,7 +95,7 @@ BEGIN
     --ADD, ADC, SUB, ABC, AND, OR, XOR, NOT
     IF (topBits = "101") THEN
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "00";
       ALU_R_mux <= "10";
       Mem_en <= '0';
@@ -105,7 +105,7 @@ BEGIN
     --SL, SRL, SRA, RRA, RR, RL
     IF (topBits = "110" ) THEN
       PC_mux <=  '0';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "00";
       ALU_R_mux <= "10";
       Mem_en <= '0';
@@ -115,16 +115,16 @@ BEGIN
     --JMP
     IF (topBits = "111"  AND eightBit = "0") THEN
       PC_mux <=  '1';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "01";
-      ALU_R_mux <= "10";
+      ALU_R_mux <= "11";
       Mem_en <= '0';
       RF_en <= '0';
       
     --BR
     ELSIF ( twelveToNine = "0000") THEN
       PC_mux <=  '1';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "01";
       ALU_R_mux <= "00";
       Mem_en <= '0';
@@ -133,7 +133,7 @@ BEGIN
     --BC
     ELSIF ( twelveToNine = ConditionCode ) THEN
       PC_mux <=  '1';
-      Mem_mux <= '0';
+      RF_mux <= '0';
       ALU_L_mux <= "01";
       ALU_R_mux <= "00";
       Mem_en <= '0';
