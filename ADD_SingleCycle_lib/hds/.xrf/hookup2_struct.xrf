@@ -1,0 +1,464 @@
+DESIGN @hookup2
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @hookup2
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @hookup2
+VIEW symbol.sb
+GRAPHIC 110,0 14 0 
+DESIGN @hookup2
+VIEW symbol.sb
+GRAPHIC 255,0 15 0 
+DESIGN @hookup2
+VIEW symbol.sb
+GRAPHIC 1,0 18 0 
+DESIGN @hookup2
+VIEW symbol.sb
+GRAPHIC 1,0 19 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 22
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 41,0 31 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 36
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 0,0 39 2 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1076,0 44 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1058,0 45 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1100,0 46 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1082,0 47 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1106,0 48 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1094,0 49 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 423,0 50 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 411,0 51 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 417,0 52 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 201,0 53 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 521,0 54 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1044,0 55 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 745,0 56 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 689,0 57 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 714,0 58 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 880,0 59 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 905,0 60 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 251,0 61 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 813,0 62 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 515,0 63 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 539,0 64 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 551,0 65 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 819,0 66 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 429,0 67 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 435,0 68 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 777,0 69 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 70
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 71
+LIBRARY ADD_SingleCycle_lib
+DESIGN @control@unit
+VIEW @behavior
+GRAPHIC 1034,0 73 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 83
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 293,0 85 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 91
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 185,0 93 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 97
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 505,0 99 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 106
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 235,0 108 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 117
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 333,0 119 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 127
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 155,0 129 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 136
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 125,0 138 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 132,0 139 1 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 147
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 367,0 149 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 374,0 150 1 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 160
+LIBRARY ADD_SingleCycle_lib
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 162
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1034,0 165 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 293,0 166 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 185,0 167 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 505,0 168 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 235,0 169 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 333,0 170 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 155,0 171 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 125,0 172 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 367,0 173 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 176
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 704,0 178 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 735,0 181 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 870,0 184 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 895,0 187 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 668,0 190 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 193
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1034,0 195 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1050,0 197 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1046,0 198 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1060,0 199 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1078,0 200 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1084,0 201 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1096,0 202 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1102,0 203 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1108,0 204 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 293,0 206 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 253,0 208 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 413,0 209 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 419,0 210 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 425,0 211 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 185,0 213 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 523,0 215 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 203,0 216 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 505,0 218 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 517,0 220 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 523,0 221 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 851,0 222 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 882,0 223 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1203,0 224 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 235,0 226 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1108,0 228 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 821,0 229 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 265,0 230 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 259,0 231 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 271,0 232 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 431,0 233 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 437,0 234 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 333,0 236 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 541,0 238 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 553,0 239 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 691,0 240 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 747,0 241 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 779,0 242 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1046,0 243 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 155,0 245 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1183,0 247 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1126,0 248 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 907,0 249 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 527,0 250 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 253,0 251 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 803,0 253 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1193,0 255 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 831,0 256 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1102,0 257 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 825,0 258 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 815,0 259 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 125,0 261 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 132,0 262 1 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 203,0 266 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 843,0 267 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 517,0 268 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1084,0 269 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 767,0 271 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 774,0 272 1 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 779,0 276 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 815,0 277 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 821,0 278 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1096,0 279 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 367,0 281 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 374,0 282 1 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 431,0 286 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 425,0 287 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 419,0 288 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 413,0 289 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 553,0 290 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1078,0 291 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 401,0 293 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 408,0 294 1 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 533,0 298 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 716,0 299 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 437,0 300 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 996,0 301 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 541,0 302 0 
+DESIGN @hookup2
+VIEW struct.bd
+GRAPHIC 1060,0 303 0 
+DESIGN @hookup2
+VIEW struct.bd
+NO_GRAPHIC 306

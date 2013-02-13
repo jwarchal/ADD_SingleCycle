@@ -12,10 +12,24 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
 ENTITY mux2to1 IS
+  PORT(a, b: IN std_logic_vector(15 DOWNTO 0);
+       o: OUT std_logic_vector(15 DOWNTO 0);
+       sel: IN std_logic);
 END ENTITY mux2to1;
 
 --
 ARCHITECTURE mux2to1arch OF mux2to1 IS
 BEGIN
+        PROCESS(a,b,sel)
+        BEGIN
+                CASE sel IS
+                  WHEN '0' => 
+                        o <= a;
+                  WHEN '1' => 
+                        o <= b;
+                  WHEN OTHERS =>
+                        null;
+                END CASE;
+        END PROCESS;
 END ARCHITECTURE mux2to1arch;
 

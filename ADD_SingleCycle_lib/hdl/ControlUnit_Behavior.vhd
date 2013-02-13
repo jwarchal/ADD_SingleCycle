@@ -35,6 +35,13 @@ BEGIN
     bottomBit := InstMem(2 DOWNTO 0);
     twelveToNine := InstMem(12 DOWNTO 9); 
     
+    PC_mux <=  '0';
+    RF_mux <= '0';
+    ALU_L_mux <= "00";
+    ALU_R_mux <= "00";
+    Mem_en <= '0';
+    RF_en <= '0';
+    
     --NOP
     IF (topBits = "000") THEN
       PC_mux <=  '0';
@@ -113,7 +120,7 @@ BEGIN
     END IF;
     
     --JMP
-    IF (topBits = "111"  AND eightBit = "0") THEN
+    IF (topBits = "111"  AND eightBit = '0') THEN
       PC_mux <=  '1';
       RF_mux <= '0';
       ALU_L_mux <= "01";
@@ -122,7 +129,7 @@ BEGIN
       RF_en <= '0';
       
     --BR
-    ELSIF ( twelveToNine = "0000") THEN
+    ELSIF (topBits = "111"  AND twelveToNine = "0000" AND eightBit = '1') THEN
       PC_mux <=  '1';
       RF_mux <= '0';
       ALU_L_mux <= "01";
@@ -131,7 +138,7 @@ BEGIN
       RF_en <= '0';
     
     --BC
-    ELSIF ( twelveToNine = ConditionCode ) THEN
+    ELSIF (topBits = "111"  AND twelveToNine = ConditionCode AND eightBit = '1') THEN
       PC_mux <=  '1';
       RF_mux <= '0';
       ALU_L_mux <= "01";
