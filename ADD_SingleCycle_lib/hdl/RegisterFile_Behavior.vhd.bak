@@ -16,7 +16,7 @@ ENTITY RegisterFile IS
   PORT(clk, w_en: IN std_logic;
     wd: IN std_logic_vector(15 DOWNTO 0);
     --ra0=dest reg addr(12:9)  ra1=src reg addr(8:5)
-    ra0, ra1: IN std_logic_vector(3 DOWNTO 0);
+    wa, ra0, ra1: IN std_logic_vector(3 DOWNTO 0);
     rd0, rd1: OUT std_logic_vector(15 DOWNTO 0));
 
 END ENTITY RegisterFile;
@@ -26,7 +26,7 @@ ARCHITECTURE Behavior OF RegisterFile IS
   
 BEGIN
   
-		PROCESS(clk, w_en, wd, ra0, ra1)
+		PROCESS(clk, w_en, wd, wa, ra0, ra1)
 				
 		--creates regfile of 16, 16-bit registers
 		TYPE reg_file_arr IS ARRAY(15 DOWNTO 0) OF std_logic_vector(15 DOWNTO 0); 
@@ -37,9 +37,9 @@ BEGIN
         rd0 <= reg_file(Conv_INTEGER(unsigned(ra0)));
         rd1 <= reg_file(Conv_INTEGER(unsigned(ra1)));
         
-   			  --writes data to destreg(ra0) if write enable(w_en) is 1
+   			  --writes data to writeaddr(wa) if write enable(w_en) is 1
    			  IF (w_en='1') THEN
-			  reg_file(Conv_INTEGER(unsigned(ra0))) := wd;
+			  reg_file(Conv_INTEGER(unsigned(wa))) := wd;
 			  END IF;
 			  
 		END PROCESS;
