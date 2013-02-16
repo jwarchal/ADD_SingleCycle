@@ -1,0 +1,433 @@
+m255
+K3
+13
+cModel Technology
+Z0 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+T_opt
+VJ@l=Rjcn>G>ZMlR:JBjac3
+04 11 8 work controlunit behavior 1
+=1-ccaf7859e036-511ff84e-11b-dd8
+Z1 o-quiet -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
+n@_opt
+Z2 OL;O;10.1c;51
+T_opt1
+V]bn`NhGdMgl[=TM9>[fSa1
+04 7 6 work hookup2 struct 1
+=1-ccaf7859e036-511ff73d-39b-11a4
+R1
+n@_opt1
+R2
+Z3 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+T_opt2
+V8S:f]@OalcG5UEMjom7^O1
+04 12 8 work registerfile behavior 1
+=1-ccaf7859e036-511fdc5b-344-1110
+R1
+n@_opt2
+R2
+R3
+Ealu
+Z4 w1361043907
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\Vincent\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
+Z9 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd
+Z10 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd
+l0
+L14
+Vl0e5nEkF5zJaU0nQ4Ua6Q0
+Z11 OL;C;10.1c;51
+33
+Z12 !s108 1361043908.168000
+Z13 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/Vincent/AppData/Local/Temp/Files0|
+Z14 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd|C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|
+Z15 o-work ADD_SingleCycle_lib -nologo -2008
+Z16 tExplicit 1
+!s100 1MU_`DTXB^^3?iOSLQVTo3
+!i10b 1
+Aaluarch
+R5
+R6
+R7
+DEx4 work 3 alu 0 22 l0e5nEkF5zJaU0nQ4Ua6Q0
+l24
+L23
+Vbj3kl?MSC:VOVHdn?^3SU2
+R11
+33
+R12
+R13
+R14
+R15
+R16
+!s100 ]Qai<DYi8?@<i4QK>F`=53
+!i10b 1
+Econtrolunit
+Z17 w1361049635
+R5
+R6
+R7
+R8
+Z18 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
+Z19 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
+l0
+L14
+V16ngacmQGF<DOn>7]T8SL2
+R11
+33
+Z20 !s108 1361049654.291000
+R13
+Z21 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Hookup_Hookuparch.vhd|C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|
+R15
+R16
+!s100 1^kQc7`hl@9^QAb^^CGUc1
+!i10b 1
+Abehavior
+R5
+R6
+R7
+DEx4 work 11 controlunit 0 22 16ngacmQGF<DOn>7]T8SL2
+l27
+L25
+VVcL4G3BPS7HGKRS1eGJCZ1
+R11
+33
+R20
+R13
+R21
+R15
+R16
+!s100 H>oWfOPhd>lk@3e]EfR=>1
+!i10b 1
+Eeasy_ram_simu
+Z22 w1360773907
+Z23 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R5
+Z24 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R6
+R7
+Z25 dC:\Users\jwarchal\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
+Z26 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
+Z27 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
+l0
+L10
+Vb_M:7PEPbFQaKDT?JIj:W1
+Z28 OE;C;10.1c;51
+32
+Z29 !s108 1360774465.975000
+Z30 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/jwarchal/AppData/Local/Temp/Files1|
+Z31 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd|
+Z32 o-work ADD_SingleCycle_lib -nologo
+R16
+!s100 oW<Sh1PiL;SMnSQFVA0hS2
+!i10b 1
+Abehavior
+R23
+R5
+R24
+R6
+R7
+DEx4 work 13 easy_ram_simu 0 22 b_M:7PEPbFQaKDT?JIj:W1
+l23
+L21
+VYU`OS?XWU0QjcH0=CeY;b3
+R28
+32
+R29
+R30
+R31
+R32
+R16
+!s100 _:6[b?iQzbn_D100VBiT50
+!i10b 1
+Eextendblock
+Z33 w1360775592
+R5
+R6
+R7
+R25
+Z34 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
+Z35 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
+l0
+L14
+V8Ae:aMA;Kn=Ob58[IOJGn2
+R28
+33
+Z36 !s108 1360775600.739000
+Z37 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/jwarchal/AppData/Local/Temp/Files0|
+Z38 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|
+R15
+R16
+!s100 X2Xm2SG=bVTdmijAS?Zej3
+!i10b 1
+Aextendblockarch
+R5
+R6
+R7
+DEx4 work 11 extendblock 0 22 8Ae:aMA;Kn=Ob58[IOJGn2
+l21
+L20
+VSfESad<9T^_d=iMQCcZ?E0
+R28
+33
+R36
+R37
+R38
+R15
+R16
+!s100 0IB=hjXmL[`N:@gJjM56k2
+!i10b 1
+Ehookup
+w1360704396
+R5
+R6
+R7
+R8
+8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Hookup_Hookuparch.vhd
+FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Hookup_Hookuparch.vhd
+l0
+L14
+Vb4zK>8l`lleoon>7OPlC>0
+R11
+33
+R20
+R13
+R21
+R15
+R16
+!s100 N_I80Ql?VIeVD<A24jZPU3
+!i10b 1
+Ehookup2
+Z39 w1361049388
+R5
+R6
+R7
+R8
+Z40 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
+Z41 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
+l0
+L13
+V]N9gQ9P2[977B2TmieS;=3
+R11
+32
+Z42 !s108 1361049389.388000
+Z43 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Vincent/AppData/Local/Temp/Files1|
+Z44 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd|
+R32
+R16
+!s100 j5Kg_<NDUamWc@m^8_U6n2
+!i10b 1
+Astruct
+DEx19 add_singlecycle_lib 7 mux4to1 0 22 =84i0_47Z1HQ;c07MTd7z2
+DEx19 add_singlecycle_lib 7 mux2to1 0 22 1OS_HaOEonI?7aQ7jil0P0
+DEx19 add_singlecycle_lib 13 easy_ram_simu 0 22 b_M:7PEPbFQaKDT?JIj:W1
+DEx19 add_singlecycle_lib 3 alu 0 22 l0e5nEkF5zJaU0nQ4Ua6Q0
+DEx19 add_singlecycle_lib 12 registerfile 0 22 5klE_F?b2Oh18bkm6h_8S3
+DEx19 add_singlecycle_lib 2 pc 0 22 ;e>2Ok2OUHIzH;;9cNf000
+DEx19 add_singlecycle_lib 9 increment 0 22 P1n_GeN6O:b8kES;N3oAY2
+DEx19 add_singlecycle_lib 11 extendblock 0 22 8Ae:aMA;Kn=Ob58[IOJGn2
+DEx19 add_singlecycle_lib 11 controlunit 0 22 16ngacmQGF<DOn>7]T8SL2
+DEx4 work 7 hookup2 0 22 ]N9gQ9P2[977B2TmieS;=3
+R23
+R24
+R5
+R6
+R7
+l179
+L40
+V0aVj=37zdCH7]W`Ukl6z50
+R11
+32
+R42
+R43
+R44
+R32
+R16
+!s100 8[VZLa1<oIfJS1X:^gXbl1
+!i10b 1
+Eincrement
+Z45 w1360767264
+R5
+R6
+R7
+R25
+Z46 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
+Z47 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
+l0
+L14
+VP1n_GeN6O:b8kES;N3oAY2
+R28
+33
+Z48 !s108 1360774548.043000
+R37
+Z49 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|
+R15
+R16
+!s100 OOXgG;<UTIeCoJgW4HGnR3
+!i10b 1
+Aincrementarch
+R5
+R6
+R7
+DEx4 work 9 increment 0 22 P1n_GeN6O:b8kES;N3oAY2
+l21
+L20
+Vig<<>Q8BPRUmDdd8U>2FM3
+R28
+33
+R48
+R37
+R49
+R15
+R16
+!s100 =FgC;^S>29@aRI`e74l?B0
+!i10b 1
+Emux2to1
+Z50 w1360774292
+R5
+R6
+R7
+R25
+Z51 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+Z52 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+l0
+L14
+V1OS_HaOEonI?7aQ7jil0P0
+R28
+33
+Z53 !s108 1360774465.228000
+R37
+Z54 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd|
+R15
+R16
+!s100 LdBNjBaj6?QfE]Pc_Jl<h0
+!i10b 1
+Amux2to1arch
+R5
+R6
+R7
+DEx4 work 7 mux2to1 0 22 1OS_HaOEonI?7aQ7jil0P0
+l23
+L22
+V@KdJZ>b6o^HgYKH<0:lnZ1
+R28
+33
+R53
+R37
+R54
+R15
+R16
+!s100 NBo:h<B28^dhZ;AA=EXOO2
+!i10b 1
+Emux4to1
+R45
+R5
+R6
+R7
+R25
+Z55 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+Z56 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+l0
+L14
+V=84i0_47Z1HQ;c07MTd7z2
+R28
+33
+R48
+R37
+R49
+R15
+R16
+!s100 RC59e@AkWZ?GZ`N6kkCZO3
+!i10b 1
+Amux4to1arch
+R5
+R6
+R7
+DEx4 work 7 mux4to1 0 22 =84i0_47Z1HQ;c07MTd7z2
+l23
+L22
+Vl6`gK8icbAe:0>@>=f`Q01
+R28
+33
+R48
+R37
+R49
+R15
+R16
+!s100 ;Z66AgGz0>z_VVeEhm3jB0
+!i10b 1
+Epc
+Z57 w1360776696
+R5
+R6
+R7
+R25
+Z58 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+Z59 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+l0
+L14
+V;e>2Ok2OUHIzH;;9cNf000
+R28
+33
+Z60 !s108 1360776749.521000
+R37
+Z61 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|
+R15
+R16
+!s100 aKT2z]6=aYUDQWl3>U<SW1
+!i10b 1
+Apcarch
+R5
+R6
+R7
+DEx4 work 2 pc 0 22 ;e>2Ok2OUHIzH;;9cNf000
+l22
+L21
+Vd1e_z^]_J=nNQUd;6=mIF0
+R28
+33
+R60
+R37
+R61
+R15
+R16
+!s100 P_VcWJ=Qj[[h_3k1AJOE92
+!i10b 1
+Eregisterfile
+Z62 w1361042512
+R5
+R6
+R7
+R8
+Z63 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z64 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+l0
+L15
+V5klE_F?b2Oh18bkm6h_8S3
+R11
+33
+Z65 !s108 1361042514.329000
+R13
+Z66 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
+R15
+R16
+!s100 =@X12eI0EcjV0OA^noa>01
+!i10b 1
+Abehavior
+R5
+R6
+R7
+DEx4 work 12 registerfile 0 22 5klE_F?b2Oh18bkm6h_8S3
+l27
+L25
+V^>6e;Q7kAR`8fiAajgaWV2
+R11
+33
+R65
+R13
+R66
+R15
+R16
+!s100 <G1WWhJ]SgQlg`452zl]_1
+!i10b 1

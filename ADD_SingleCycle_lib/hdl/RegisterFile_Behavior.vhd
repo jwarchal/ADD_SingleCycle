@@ -38,7 +38,7 @@ BEGIN
         rd1 <= reg_file(Conv_INTEGER(unsigned(ra1)));
         
    			  --writes data to writeaddr(wa) if write enable(w_en) is 1
-   			  IF (w_en='1') THEN
+   			  IF (w_en = '1') THEN
 			  reg_file(Conv_INTEGER(unsigned(wa))) := wd;
 			  END IF;
 			  

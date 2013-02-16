@@ -29,15 +29,18 @@ BEGIN
   BEGIN
     localx := unsigned(SXT(x,17));
     localy := unsigned(SXT(y,17));
-    CASE op IS 
+    CASE op IS
+    --Add 
     WHEN "01000" =>
       localz := localx + localy;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
+    --ADC
     WHEN "01001" =>
       localz := localx + localy + cin;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
+    --SUB
     WHEN "01010" =>
       localz := localx - localy;
       localc := std_logic(localz(16));

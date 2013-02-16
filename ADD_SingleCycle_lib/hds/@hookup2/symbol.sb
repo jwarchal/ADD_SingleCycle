@@ -372,23 +372,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hdl"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb.info"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb.user"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds"
 )
 (vvPair
 variable "appl"
@@ -404,27 +404,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup2"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup2"
 )
 (vvPair
 variable "date"
-value "02/13/2013"
+value "02/16/2013"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "13"
+value "16"
 )
 (vvPair
 variable "entity_name"
@@ -452,7 +452,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "GURREN"
+value "VINCENT-LAPTOP"
 )
 (vvPair
 variable "language"
@@ -492,11 +492,11 @@ value "February"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup2\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\jwarchal\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup2\\symbol.sb"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup2\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -520,7 +520,7 @@ value "<TBD>"
 )
 (vvPair
 variable "task_ModelSimPath"
-value "C:\\modeltech_10.1c\\win32"
+value "C:\\modeltech64_10.1c\\win64"
 )
 (vvPair
 variable "task_NC-SimPath"
@@ -552,7 +552,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "12:41:12"
+value "17:29:30"
 )
 (vvPair
 variable "unit"
@@ -560,7 +560,7 @@ value "Hookup2"
 )
 (vvPair
 variable "user"
-value "jwarchal"
+value "Vincent"
 )
 (vvPair
 variable "version"
@@ -756,7 +756,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "31200,50000,41400,51000"
+xt "31200,50000,41100,51000"
 st "
 by %user on %dd %month %year
 "
@@ -1370,6 +1370,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 282,0
+lastUid 512,0
 activeModelName "Symbol:CDM"
 )
