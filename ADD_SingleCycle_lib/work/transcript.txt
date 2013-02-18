@@ -8,6 +8,8 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays ADD_SingleCycle_lib.Hookup2(struct) 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -26,102 +28,90 @@
 # Loading work.mux4to1(mux4to1arch)#1
 add wave  \
 sim:/hookup2/c \
-sim:/hookup2/rst
-add wave  \
-sim:/hookup2/b1
-add wave  \
-sim:/hookup2/hDOut
-add wave  \
-sim:/hookup2/rd0 \
-sim:/hookup2/rd1
-add wave  \
-sim:/hookup2/o1 \
-sim:/hookup2/o2
-add wave  \
-sim:/hookup2/z
-add wave  \
+sim:/hookup2/rst \
 sim:/hookup2/ALU_L_mux \
 sim:/hookup2/ALU_R_mux \
 sim:/hookup2/Mem_en \
 sim:/hookup2/PC_mux \
 sim:/hookup2/RF_en \
-sim:/hookup2/RF_mux
-force -freeze {sim:/hookup2/c} 1 0, 0 {50 ns} -r 100
-# ** Error: (vish-4008) Object 'sim:/hookup2/c' not found.
-# 
-force -freeze sim:/hookup2/rst {1} 0
-# ** Error: (vsim-4026) Value "1" does not represent a literal of the enumeration type.
-# ** Error: (vsim-4011) Invalid force value: {1} 0.
-# 
-force -freeze sim:/hookup2/b1 {0000000000000000} 0
-# Value length (17) does not equal array index length (16).
-# 
-# ** Error: (vsim-4011) Invalid force value: {0000000000000000} 0.
-# 
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_13
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_1
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_13
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_13
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_1
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
+sim:/hookup2/RF_mux \
+sim:/hookup2/SEXT \
+sim:/hookup2/ZEXT_L \
+sim:/hookup2/ZEXT_R \
+sim:/hookup2/b \
+sim:/hookup2/b1 \
+sim:/hookup2/ccvector \
+sim:/hookup2/cin \
+sim:/hookup2/dout \
+sim:/hookup2/dout1 \
+sim:/hookup2/dout2 \
+sim:/hookup2/hDOut \
+sim:/hookup2/hDOut1 \
+sim:/hookup2/o \
+sim:/hookup2/o1 \
+sim:/hookup2/o2 \
+sim:/hookup2/o3 \
+sim:/hookup2/rd0 \
+sim:/hookup2/rd1 \
+sim:/hookup2/z \
+sim:/hookup2/dout3
 force -freeze sim:/hookup2/c 1 0, 0 {50 ns} -r 100
 force -freeze sim:/hookup2/rst 1 0
 force -freeze sim:/hookup2/b1 0000000000000000 0
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 0  Instance: /hookup2/U_3
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 100 ns  Iteration: 0  Instance: /hookup2/U_3
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 100 ns  Iteration: 0  Instance: /hookup2/U_3
@@ -129,49 +119,54 @@ run
 #    Time: 100 ns  Iteration: 0  Instance: /hookup2/U_3
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 100 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ns  Iteration: 1  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 150 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 150 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 0  Instance: /hookup2/U_3
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 0  Instance: /hookup2/U_3
-noforce sim:/hookup2/rst
 noforce sim:/hookup2/b1
+noforce sim:/hookup2/rst
 run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 2  Instance: /hookup2/U_13
+#    Time: 100 ns  Iteration: 2  Instance: /hookup2/U_13
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 200 ns  Iteration: 2  Instance: /hookup2/U_13
+#    Time: 100 ns  Iteration: 2  Instance: /hookup2/U_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 3  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 3  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 4  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 4  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /hookup2/U_5
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 200 ns  Iteration: 3  Instance: /hookup2/U_5
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 200 ns  Iteration: 3  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 4  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ns  Iteration: 4  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 2  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /hookup2/U_5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ns  Iteration: 3  Instance: /hookup2/U_5
 run
 run
 run
+run
+run
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 4  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 4  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 5  Instance: /hookup2/U_13
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 900 ns  Iteration: 5  Instance: /hookup2/U_13
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 3  Instance: /hookup2/U_13
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 1 us  Iteration: 3  Instance: /hookup2/U_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 3  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 3  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 4  Instance: /hookup2/U_5
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 4  Instance: /hookup2/U_5

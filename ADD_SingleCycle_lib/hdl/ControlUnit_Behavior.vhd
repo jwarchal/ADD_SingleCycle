@@ -51,14 +51,14 @@ BEGIN
       ALU_R_mux <= "00";
       Mem_en <= '0';
       RF_en <= '0';
-    --LF
+    --LD
     ELSIF(topBits = "001") THEN
       PC_mux <= '0'; 
       RF_mux <= '1';
-      ALU_L_mux <= "11";
+      ALU_L_mux <= "01";
       ALU_R_mux <= "10";
-      Mem_en <= '1';
-      RF_en <= '0';
+      Mem_en <= '0';
+      RF_en <= '1';
     --ST     
     ELSIF(topBits = "010") THEN
       PC_mux <=  '0';
