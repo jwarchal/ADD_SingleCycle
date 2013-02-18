@@ -88,7 +88,7 @@ BEGIN
       PC_mux <=  '0';
       RF_mux <= '0';
       ALU_L_mux <= "10";
-      ALU_R_mux <= "01";
+      ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';  
     --ADD, ADC, SUB, ABC, AND, OR, XOR, NOT

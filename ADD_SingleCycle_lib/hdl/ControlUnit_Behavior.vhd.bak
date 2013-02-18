@@ -79,7 +79,7 @@ BEGIN
     ELSIF(topBits = "100" AND eightBit = '0') THEN
       PC_mux <=  '0';
       RF_mux <= '0';
-      ALU_L_mux <= "11";
+      ALU_L_mux <= "01";
       ALU_R_mux <= "01";
       Mem_en <= '0';
       RF_en <='1';
@@ -88,7 +88,7 @@ BEGIN
       PC_mux <=  '0';
       RF_mux <= '0';
       ALU_L_mux <= "10";
-      ALU_R_mux <= "01";
+      ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';  
     --ADD, ADC, SUB, ABC, AND, OR, XOR, NOT
