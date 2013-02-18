@@ -55,7 +55,7 @@ BEGIN
     ELSIF(topBits = "001") THEN
       PC_mux <= '0'; 
       RF_mux <= '1';
-      ALU_L_mux <= "01";
+      ALU_L_mux <= "11";
       ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';
@@ -72,7 +72,7 @@ BEGIN
       PC_mux <=  '0';
       RF_mux <= '0';
       ALU_L_mux <= "00";
-      ALU_R_mux <= "01";
+      ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';
     --LIL
@@ -88,7 +88,7 @@ BEGIN
       PC_mux <=  '0';
       RF_mux <= '0';
       ALU_L_mux <= "10";
-      ALU_R_mux <= "10";
+      ALU_R_mux <= "11";
       Mem_en <= '0';
       RF_en <= '1';  
     --ADD, ADC, SUB, ABC, AND, OR, XOR, NOT
@@ -124,7 +124,7 @@ BEGIN
       Mem_en <= '0';
       RF_en <= '0';
     --BC
-    ELSIF (topBits = "111"  AND twelveToNine = ConditionCode AND eightBit = '1') THEN
+    ELSIF (topBits = "111"  AND ((twelveToNine(3)= '1' AND ConditionCode(3) = '1')OR(twelveToNine(2)= '1' AND ConditionCode(2) = '1')OR(twelveToNine(1)= '1' AND ConditionCode(1) = '1')OR(twelveToNine(0)= '1' AND ConditionCode(0) = '1')) AND eightBit = '1') THEN
       PC_mux <=  '1';
       RF_mux <= '0';
       ALU_L_mux <= "01";

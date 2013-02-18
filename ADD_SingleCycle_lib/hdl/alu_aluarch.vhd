@@ -13,7 +13,7 @@ USE ieee.std_logic_arith.all;
 
 ENTITY alu IS
       PORT( x,y: in std_logic_vector(15 DOWNTO 0);
-      op: in std_logic_vector(4 DOWNTO 0);
+      op: in std_logic_vector(5 DOWNTO 0);
       cin: in std_logic;
       z: out std_logic_vector(15 DOWNTO 0);
       ccvector: out std_logic_vector(3 DOWNTO 0));
@@ -31,62 +31,66 @@ BEGIN
     localy := unsigned(SXT(y,17));
     CASE op IS
     --Add 
-    WHEN "01000" =>
+    WHEN "101000" =>
       localz := localx + localy;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
     --ADC
-    WHEN "01001" =>
+    WHEN "101001" =>
       localz := localx + localy + cin;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
     --SUB
-    WHEN "01010" =>
-      localz := localx - localy;
+    WHEN "101010" =>
+      localz := localy - localx;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
-    WHEN "01011" =>
-      localz := localx - localy + cin;
+    WHEN "101011" =>
+      localz := localy - localx + cin;
       localc := std_logic(localz(16));
       z <= std_logic_vector(localz(15 DOWNTO 0));
-    WHEN "01100" =>
+    WHEN "101100" =>
       z <= x AND y;
       localc := '0';
-    WHEN "01101" =>
+    WHEN "101101" =>
       z <= x OR y;
       localc := '0';
-    WHEN "01110" =>
+    WHEN "101110" =>
       z <= x XOR y;
       localc := '0';
-    WHEN "01111" =>
+    WHEN "101111" =>
       z <= NOT x;
       localc := '0';
-    WHEN "10000" =>
+    WHEN "110000" =>
       z(15 DOWNTO 1) <= x(14 DOWNTO 0);
       z(0) <= '0';
       localc := '0';
-    WHEN "10001" =>
+    WHEN "110001" =>
       z(14 DOWNTO 0) <= x(15 DOWNTO 1);
       z(15) <= '0';
       localc := '0';
-    WHEN "10010" =>
+    WHEN "110010" =>
       z(14 DOWNTO 0) <= x(15 DOWNTO 1);
       z(15) <= x(15);
       localc := '0';
-    WHEN "10110" =>
+    WHEN "110110" =>
       localc := std_logic(localx(0));
       z(14 DOWNTO 0) <= x(15 DOWNTO 1);
       z(15) <= x(15);
-    WHEN "10101" =>
+    WHEN "110101" =>
       localc := std_logic(localx(0));
       z(14 DOWNTO 0) <= x(15 DOWNTO 1);
       z(15) <= cin;
-    WHEN "10100" =>
+    WHEN "110100" =>
       localc := std_logic(localx(15));
       z(15 DOWNTO 1) <= x(14 DOWNTO 0);
       z(0) <= cin;
     WHEN OTHERS =>
-      localz := localx + localy;
+      IF op(5 DOWNTO 3) = "011" THEN
+        localz := localx;
+      ELSE
+        localz := localx + localy;
+      END IF;
       localc := '0';
       z <= std_logic_vector(localz(15 DOWNTO 0));
     END CASE;
