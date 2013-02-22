@@ -14,7 +14,7 @@ USE ieee.std_logic_arith.all;
 ENTITY PC IS
   PORT(a: IN std_logic_vector(15 DOWNTO 0);
     b: OUT std_logic_vector(15 DOWNTO 0);
-    c,e: IN std_logic);
+    c,e,rst: IN std_logic);
 END ENTITY PC;
 
 --
@@ -22,6 +22,9 @@ ARCHITECTURE PCarch OF PC IS
 BEGIN
   PROCESS(c)
   BEGIN
+    IF(rst='1')THEN
+      b <= "0000000000000000";
+    END IF;
     IF(rising_edge(c) AND (e = '1'))THEN
       b <= a;
     END IF;
