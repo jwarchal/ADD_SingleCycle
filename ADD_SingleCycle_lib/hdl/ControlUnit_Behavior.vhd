@@ -107,7 +107,7 @@ BEGIN
       ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';
-      --JMP
+    --JMP
     ELSIF(topBits = "111"  AND eightBit = '0') THEN
       PC_mux <=  '1';
       RF_mux <= '0';

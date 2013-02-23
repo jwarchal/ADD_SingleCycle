@@ -30,40 +30,36 @@ begin
 		  table := (others => (others => '0'));
 table(0) := To_stdlogicvector(X"0002");
 table(1) := To_stdlogicvector(X"0000");
-table(2) := To_stdlogicvector(X"821F");
+table(2) := To_stdlogicvector(X"821E");
 table(3) := To_stdlogicvector(X"8300");
-table(4) := To_stdlogicvector(X"8420");
+table(4) := To_stdlogicvector(X"841F");
 table(5) := To_stdlogicvector(X"8500");
 table(6) := To_stdlogicvector(X"2620");
 table(7) := To_stdlogicvector(X"2840");
-table(8) := To_stdlogicvector(X"A002");
-table(9) := To_stdlogicvector(X"7E60");
-table(10) := To_stdlogicvector(X"BE02");
-table(11) := To_stdlogicvector(X"E313");
-table(12) := To_stdlogicvector(X"7E80");
-table(13) := To_stdlogicvector(X"BE02");
-table(14) := To_stdlogicvector(X"E310");
-table(15) := To_stdlogicvector(X"8A01");
-table(16) := To_stdlogicvector(X"8B00");
-table(17) := To_stdlogicvector(X"7E80");
-table(18) := To_stdlogicvector(X"BE02");
-table(19) := To_stdlogicvector(X"7E20");
-table(20) := To_stdlogicvector(X"BE02");
-table(21) := To_stdlogicvector(X"E503");
-table(22) := To_stdlogicvector(X"A062");
-table(23) := To_stdlogicvector(X"A082");
-table(24) := To_stdlogicvector(X"A060");
-table(25) := To_stdlogicvector(X"A8A2");
-table(26) := To_stdlogicvector(X"7E80");
-table(27) := To_stdlogicvector(X"BEA2");
-table(28) := To_stdlogicvector(X"E502");
-table(29) := To_stdlogicvector(X"E000");
-table(30) := To_stdlogicvector(X"E000");
-table(31) := To_stdlogicvector(X"0003");
-table(32) := To_stdlogicvector(X"000A");
-
-
-
+table(8) := To_stdlogicvector(X"8000");
+table(9) := To_stdlogicvector(X"8100");
+table(10) := To_stdlogicvector(X"7E60");
+table(11) := To_stdlogicvector(X"BE02");
+table(12) := To_stdlogicvector(X"E311");
+table(13) := To_stdlogicvector(X"7E80");
+table(14) := To_stdlogicvector(X"BE02");
+table(15) := To_stdlogicvector(X"E30E");
+table(16) := To_stdlogicvector(X"8A01");
+table(17) := To_stdlogicvector(X"8B00");
+table(18) := To_stdlogicvector(X"7E00");
+table(19) := To_stdlogicvector(X"BE82");
+table(20) := To_stdlogicvector(X"E503");
+table(21) := To_stdlogicvector(X"A062");
+table(22) := To_stdlogicvector(X"A082");
+table(23) := To_stdlogicvector(X"A060");
+table(24) := To_stdlogicvector(X"A8A2");
+table(25) := To_stdlogicvector(X"7E80");
+table(26) := To_stdlogicvector(X"BEA2");
+table(27) := To_stdlogicvector(X"E502");
+table(28) := To_stdlogicvector(X"E1FB");
+table(29) := To_stdlogicvector(X"E100");
+table(30) := To_stdlogicvector(X"0003");
+table(31) := To_stdlogicvector(X"00010");
 
           elsif (wr = '1') then
 	      table_index :=  CONV_INTEGER(hAddr(15 downto 0));
