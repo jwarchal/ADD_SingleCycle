@@ -12,17 +12,19 @@
   USE ieee.std_logic_arith.all;
   
   ENTITY Inst_StateMachine IS
-    PORT ( clock, ifilled, fit: IN std_logic;
-           addr, data : IN std_logic_vector (15 DOWNTO 0);
-           inst, iaddr: OUT std_logic_vector (15 DOWNTO 0);
-           idelay, irequest : OUT std_logic );
+    PORT ( clock, ifilled: IN std_logic;
+           addr, idata, intrdata: IN std_logic_vector (15 DOWNTO 0);
+           inst, iaddr, intwdata: OUT std_logic_vector (15 DOWNTO 0);
+           intaddr: OUT std_logic_vector (3 DOWNTO 0);
+           idelay, ireq, intwe: OUT std_logic );
   END ENTITY Inst_StateMachine;
   
   --
   ARCHITECTURE Behavior OF Inst_StateMachine IS
     TYPE state IS(hit_state, wait_state);
+    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector (11 DOWNTO 0);
     SIGNAL current_state, next_state: state;
-  
+    SIGNAL tags: tagarray := ("00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000");
     BEGIN
     PROCESS(clock)
       BEGIN
@@ -31,8 +33,15 @@
           END IF;
     END PROCESS;
   
-    PROCESS(hit, addr, data, ifilled)
+    PROCESS(addr, ifilled)
+    VARIABLE hit: std_logic := '0';
       BEGIN
+        hit <= '0';
+        FOR i IN 0 TO 15 LOOP
+          IF(tagarray(i) = addr(15 DOWNTO 4)) THEN
+            hit <= '1';
+          END IF;
+        END LOOP;
         CASE current_state IS
             WHEN hit_state =>
             IF(hit = '1') THEN
@@ -40,7 +49,6 @@
             ELSE
               next_state <= wait_state;
             END IF;
-  
             WHEN wait_state =>
             IF(ifilled = '0') THEN
               next_state <= wait_state;
@@ -50,10 +58,26 @@
         END CASE;
     END PROCESS;
   
-    PROCESS(hit_state, wait_state)
+    PROCESS(current_state)
       BEGIN
         CASE current_state IS
-          
+          WHEN hit_state =>
+            iaddr <= addr;
+            idelay <= '0';
+            ireq <= '0';
+            intwe <= '0';
+            intaddr <= addr(3 DOWNTO 0);
+            inst <= intrdata;
+            intwdata <= "0000000000000000";
+          WHEN wait_state =>
+            iaddr <= addr;
+            idelay <= '1';
+            ireq <= '1';
+            intwe <= '1';
+            intaddr <= addr(3 DOWNTO 0);
+            inst <= intrdata;
+            intwdata <= idata;
+            tagarray(to_integer(unsigned(addr(3 DOWNTO 0)))) <= intrdata;
         END CASE;
     END PROCESS;
           
