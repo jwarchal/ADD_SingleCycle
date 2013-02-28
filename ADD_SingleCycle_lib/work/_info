@@ -10,6 +10,7 @@ Z1 04 7 6 work hookup2 struct 1
 Z2 o-quiet -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
 n@_opt
 Z3 OL;O;10.1c;51
+Z4 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
 T_opt1
 Vh9=JWATBil[S?^86NOY[h0
 R1
@@ -17,7 +18,7 @@ R1
 R2
 n@_opt1
 R3
-Z4 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+R4
 T_opt2
 VPb=@ETc>ZlEo4kglX83ih1
 R1
@@ -321,6 +322,26 @@ R16
 R17
 !s100 =FgC;^S>29@aRI`e74l?B0
 !i10b 1
+Einst_statemachine
+w1362087260
+R6
+R7
+R8
+R24
+8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
+FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
+l0
+L14
+VS6bKb4m`[VPYz=[ibE;gM0
+!s100 ig:o^c;CnmdL]B1]YY_P_1
+R12
+33
+!i10b 1
+!s108 1362087263.556000
+R47
+!s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
+R16
+R17
 Emux2to1
 Z56 w1360774292
 R6

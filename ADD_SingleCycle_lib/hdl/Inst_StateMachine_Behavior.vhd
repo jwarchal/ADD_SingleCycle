@@ -22,9 +22,9 @@
   --
   ARCHITECTURE Behavior OF Inst_StateMachine IS
     TYPE state IS(hit_state, wait_state);
-    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector (11 DOWNTO 0);
+    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(11 DOWNTO 0);
     SIGNAL current_state, next_state: state;
-    SIGNAL tags: tagarray := ("00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000","00000000000");
+    SIGNAL tags: tagarray :=("000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000");
     BEGIN
     PROCESS(clock)
       BEGIN
@@ -36,10 +36,10 @@
     PROCESS(addr, ifilled)
     VARIABLE hit: std_logic := '0';
       BEGIN
-        hit <= '0';
+        hit := '0';
         FOR i IN 0 TO 15 LOOP
-          IF(tagarray(i) = addr(15 DOWNTO 4)) THEN
-            hit <= '1';
+          IF(tags(i) = addr(15 DOWNTO 4)) THEN
+            hit := '1';
           END IF;
         END LOOP;
         CASE current_state IS
