@@ -77,7 +77,7 @@
             intaddr <= addr(3 DOWNTO 0);
             inst <= intrdata;
             intwdata <= idata;
-            tagarray(to_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 4);
+            tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 4);
         END CASE;
     END PROCESS;
           
