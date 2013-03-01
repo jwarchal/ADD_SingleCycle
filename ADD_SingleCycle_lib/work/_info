@@ -10,22 +10,23 @@ V6ZZ0f0ZAVU>84:ZTHP@S22
 o-quiet +acc -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
 n@_opt
 Z1 OL;O;10.1c;51
+Z2 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
 T_opt1
 Vh9=JWATBil[S?^86NOY[h0
-Z2 04 7 6 work hookup2 struct 1
+Z3 04 7 6 work hookup2 struct 1
 =1-ccaf7859e036-5120065d-8d-1590
-Z3 o-quiet -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
+Z4 o-quiet -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
 n@_opt1
 R1
-Z4 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
+R2
 T_opt2
 VPb=@ETc>ZlEo4kglX83ih1
-R2
-=1-ccaf7859e036-51280806-7c-e84
 R3
+=1-ccaf7859e036-51280806-7c-e84
+R4
 n@_opt2
 R1
-R4
+R2
 Ealu
 Z5 w1361554227
 Z6 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
@@ -332,48 +333,48 @@ Z58 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/I
 l0
 L14
 VS6bKb4m`[VPYz=[ibE;gM0
+!s100 ig:o^c;CnmdL]B1]YY_P_1
 R12
 33
-Z59 !s108 1362156307.784000
+!i10b 1
+Z59 !s108 1362156470.729000
 R14
 Z60 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
 R16
 R17
-!s100 ig:o^c;CnmdL]B1]YY_P_1
-!i10b 1
 Abehavior
 R6
 R7
 R8
-DEx4 work 17 inst_statemachine 0 22 S6bKb4m`[VPYz=[ibE;gM0
+Z61 DEx4 work 17 inst_statemachine 0 22 S6bKb4m`[VPYz=[ibE;gM0
 l28
 L23
-VQ^b[WG=A[Ci>i9J[KDM^[1
+Z62 VQ^b[WG=A[Ci>i9J[KDM^[1
+Z63 !s100 62OW8da^>PI[JAGN]mZFj3
 R12
 33
+!i10b 1
 R59
 R14
 R60
 R16
 R17
-!s100 62OW8da^>PI[JAGN]mZFj3
-!i10b 1
 Emux2to1
-Z61 w1360774292
+Z64 w1360774292
 R6
 R7
 R8
 R40
-Z62 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
-Z63 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+Z65 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+Z66 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
 l0
 L14
 V1OS_HaOEonI?7aQ7jil0P0
 R43
 33
-Z64 !s108 1360774465.228000
+Z67 !s108 1360774465.228000
 R45
-Z65 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd|
+Z68 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd|
 R16
 R17
 !s100 LdBNjBaj6?QfE]Pc_Jl<h0
@@ -388,9 +389,9 @@ L22
 V@KdJZ>b6o^HgYKH<0:lnZ1
 R43
 33
-R64
+R67
 R45
-R65
+R68
 R16
 R17
 !s100 NBo:h<B28^dhZ;AA=EXOO2
@@ -401,8 +402,8 @@ R6
 R7
 R8
 R40
-Z66 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
-Z67 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+Z69 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+Z70 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
 l0
 L14
 V=84i0_47Z1HQ;c07MTd7z2
@@ -433,21 +434,21 @@ R17
 !s100 ;Z66AgGz0>z_VVeEhm3jB0
 !i10b 1
 Epc
-Z68 w1360881073
+Z71 w1360881073
 R6
 R7
 R8
 R9
-Z69 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
-Z70 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+Z72 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+Z73 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
 l0
 L14
 V;e>2Ok2OUHIzH;;9cNf000
 R12
 33
-Z71 !s108 1361549823.125000
+Z74 !s108 1361549823.125000
 R14
-Z72 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|
+Z75 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|
 R16
 R17
 !s100 aKT2z]6=aYUDQWl3>U<SW1
@@ -462,29 +463,29 @@ L21
 Vd1e_z^]_J=nNQUd;6=mIF0
 R12
 33
-R71
+R74
 R14
-R72
+R75
 R16
 R17
 !s100 P_VcWJ=Qj[[h_3k1AJOE92
 !i10b 1
 Eregisterfile
-Z73 w1361205263
+Z76 w1361205263
 R6
 R7
 R8
 R24
-Z74 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
-Z75 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z77 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z78 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
 l0
 L15
 VHQ@Jba?O40<bNWMaVmJ342
 R12
 33
-Z76 !s108 1361205268.780000
+Z79 !s108 1361205268.780000
 R47
-Z77 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
+Z80 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
 R16
 R17
 !s100 CkVjK^2=DgfDok22b9@F[2
@@ -499,9 +500,9 @@ L25
 V^]35M<>Ol9R=RTX@L0Bz=0
 R12
 33
-R76
+R79
 R47
-R77
+R80
 R16
 R17
 !s100 6g`TEWj^L;^M97U_QGz1g2

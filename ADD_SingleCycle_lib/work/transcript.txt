@@ -8,15 +8,44 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.Inst_StateMachine(Behavior) 
-# ** Note: (vsim-3812) Design is being optimized...
-# 
-# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
-# 
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Inst_StateMachine(Behavior)".
-# 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading work.inst_statemachine(behavior)#1
+add wave  \
+sim:/inst_statemachine/clock \
+sim:/inst_statemachine/ifilled \
+sim:/inst_statemachine/addr \
+sim:/inst_statemachine/idata \
+sim:/inst_statemachine/intrdata \
+sim:/inst_statemachine/inst \
+sim:/inst_statemachine/iaddr \
+sim:/inst_statemachine/intwdata \
+sim:/inst_statemachine/intaddr \
+sim:/inst_statemachine/idelay \
+sim:/inst_statemachine/ireq \
+sim:/inst_statemachine/intwe \
+sim:/inst_statemachine/current_state \
+sim:/inst_statemachine/next_state \
+sim:/inst_statemachine/tags
+force -freeze sim:/inst_statemachine/clock 1 0, 0 {50 ns} -r 100
+force -freeze sim:/inst_statemachine/addr 0101010101010101 0
+run
+# 0
+# 
+restart
+force -freeze sim:/inst_statemachine/addr 0000111100001111 0
+run
+# 0
+# 
+force -freeze sim:/inst_statemachine/ifilled 0 0
+run
+# 0
+# 
+force -freeze sim:/inst_statemachine/ifilled 1 0
+run
+# 0
+# 
+# The connection to HDS has been closed 
