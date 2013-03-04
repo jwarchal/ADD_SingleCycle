@@ -12,8 +12,9 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
 ENTITY mux2to1 IS
-  PORT(a, b: IN std_logic_vector(15 DOWNTO 0);
-       o: OUT std_logic_vector(15 DOWNTO 0);
+  GENERIC(size: POSITIVE := 16);
+  PORT(a, b: IN std_logic_vector(size - 1 DOWNTO 0);
+       o: OUT std_logic_vector(size - 1 DOWNTO 0);
        sel: IN std_logic);
 END ENTITY mux2to1;
 

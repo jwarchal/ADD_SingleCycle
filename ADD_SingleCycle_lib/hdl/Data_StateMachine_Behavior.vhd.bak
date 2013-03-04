@@ -14,7 +14,8 @@ USE ieee.std_logic_arith.all;
 ENTITY Data_StateMachine IS
   PORT ( clock, dfilled, rw_en : IN std_logic;
          addrFromP, dataFromP, dataFromMem, addrFromMem, dataFromRam: IN std_logic_vector(15 DOWNTO 0);
-         dataToP, addrToMem, dataToMem, addrToRam, dataToRam: OUT std_logic_vector (15 DOWNTO 0);
+         dataToP, addrToMem, dataToMem, dataToRam: OUT std_logic_vector (15 DOWNTO 0);
+         addrToRam: OUT std_logic_vector (3 DOWNTO 0);
          ddelay, rreq, wreq, ramrw_en : OUT std_logic);
 END ENTITY Data_StateMachine;
 
