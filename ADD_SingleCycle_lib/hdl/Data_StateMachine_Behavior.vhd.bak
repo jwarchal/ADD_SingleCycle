@@ -37,7 +37,7 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
       BEGIN
         hit := '0';
         FOR i IN 0 TO 15 LOOP
-          IF(tags(i) = addr(15 DOWNTO 4)) THEN
+          IF(tags(i) = addrFromP(15 DOWNTO 4)) THEN
             hit := '1';
           END IF;
         END LOOP;
