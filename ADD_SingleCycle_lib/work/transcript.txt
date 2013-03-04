@@ -7,45 +7,40 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.Inst_StateMachine(Behavior) 
+# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.Memory_StateMachine(Behavior) 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Memory_StateMachine(Behavior)".
+# 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.inst_statemachine(behavior)#1
+# Loading work.memory_statemachine(behavior)#1
 add wave  \
-sim:/inst_statemachine/clock \
-sim:/inst_statemachine/ifilled \
-sim:/inst_statemachine/addr \
-sim:/inst_statemachine/idata \
-sim:/inst_statemachine/intrdata \
-sim:/inst_statemachine/inst \
-sim:/inst_statemachine/iaddr \
-sim:/inst_statemachine/intwdata \
-sim:/inst_statemachine/intaddr \
-sim:/inst_statemachine/idelay \
-sim:/inst_statemachine/ireq \
-sim:/inst_statemachine/intwe \
-sim:/inst_statemachine/current_state \
-sim:/inst_statemachine/next_state \
-sim:/inst_statemachine/tags
-force -freeze sim:/inst_statemachine/clock 1 0, 0 {50 ns} -r 100
-force -freeze sim:/inst_statemachine/addr 0101010101010101 0
-run
-# 0
+sim:/memory_statemachine/clock \
+sim:/memory_statemachine/ireq \
+sim:/memory_statemachine/wreq \
+sim:/memory_statemachine/rreq \
+sim:/memory_statemachine/ackFromMem \
+sim:/memory_statemachine/addrFromInst \
+sim:/memory_statemachine/addrFromData \
+sim:/memory_statemachine/dataFromMem \
+sim:/memory_statemachine/dataFromData \
+sim:/memory_statemachine/memw_en \
+sim:/memory_statemachine/memr_en \
+sim:/memory_statemachine/ifilled \
+sim:/memory_statemachine/dfilled \
+sim:/memory_statemachine/dataToMem \
+sim:/memory_statemachine/addrToMem \
+sim:/memory_statemachine/current_state \
+sim:/memory_statemachine/next_state \
+sim:/memory_statemachine/delay
+force -freeze sim:/memory_statemachine/addrToMem 1 0, 0 {50 ns} -r 100
+# Value length (1) does not equal array index length (16).
 # 
-restart
-force -freeze sim:/inst_statemachine/addr 0000111100001111 0
-run
-# 0
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ns}.
 # 
-force -freeze sim:/inst_statemachine/ifilled 0 0
-run
-# 0
-# 
-force -freeze sim:/inst_statemachine/ifilled 1 0
-run
-# 0
-# 
-# The connection to HDS has been closed 
