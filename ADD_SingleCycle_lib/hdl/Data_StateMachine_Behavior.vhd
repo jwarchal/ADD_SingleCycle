@@ -14,7 +14,8 @@ USE ieee.std_logic_arith.all;
 ENTITY Data_StateMachine IS
   PORT ( clock, dfilled, rw_en : IN std_logic;
          addrFromP, dataFromP, dataFromMem, addrFromMem, dataFromRam: IN std_logic_vector(15 DOWNTO 0);
-         dataToP, addrToMem, dataToMem, addrToRam, dataToRam: OUT std_logic_vector (15 DOWNTO 0);
+         dataToP, addrToMem, dataToMem, dataToRam: OUT std_logic_vector (15 DOWNTO 0);
+         addrToRam: OUT std_logic_vector (3 DOWNTO 0);
          ddelay, rreq, wreq, ramrw_en : OUT std_logic);
 END ENTITY Data_StateMachine;
 
@@ -37,7 +38,7 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
       BEGIN
         hit := '0';
         FOR i IN 0 TO 15 LOOP
-          IF(tags(i) = addr(15 DOWNTO 4)) THEN
+          IF(tags(i) = addrFromP(15 DOWNTO 4)) THEN
             hit := '1';
           END IF;
         END LOOP;
