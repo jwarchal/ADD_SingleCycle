@@ -21,7 +21,7 @@ END ENTITY Memory_StateMachine;
 --
 ARCHITECTURE Behavior OF Memory_StateMachine IS
   TYPE state IS(wfill_state, rfill_state, fill_state, wait_state);
-  SIGNAL current_state, next_state: state;
+  SIGNAL current_state, next_state: state := wait_state;
   SIGNAL delay : std_logic;
   BEGIN
     

@@ -17,7 +17,7 @@ ENTITY ControlUnit IS
         idelay, ddelay: IN std_logic;
         ConditionCode: IN std_logic_vector (3 DOWNTO 0);
         PC_mux, ALU_R_mux, ALU_L_mux : OUT std_logic_vector (1 DOWNTO 0);
-        RF_mux, Mem_en, RF_en : OUT std_logic);
+        RF_mux, Mem_en, RF_en, dcache_en : OUT std_logic);
         
 END ENTITY ControlUnit;
 
@@ -43,6 +43,7 @@ BEGIN
     ALU_R_mux <= "00";
     Mem_en <= '0';
     RF_en <= '0';
+    dcache_en <= '0';
     
     --Delay
     IF(idelay = '1' OR ddelay = '1') THEN
@@ -68,6 +69,7 @@ BEGIN
       ALU_R_mux <= "10";
       Mem_en <= '0';
       RF_en <= '1';
+      dcache_en <= '1';
     --ST     
     ELSIF(topBits = "010") THEN
       PC_mux <=  "00";
@@ -76,6 +78,7 @@ BEGIN
       ALU_R_mux <= "10";
       Mem_en <= '1';
       RF_en <= '0';
+      dcache_en <= '1';
     --MOV
     ELSIF(topBits = "011") THEN 
       PC_mux <=  "00";

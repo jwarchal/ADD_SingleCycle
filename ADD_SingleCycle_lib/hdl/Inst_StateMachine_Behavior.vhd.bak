@@ -24,7 +24,7 @@
     TYPE state IS(hit_state, wait_state);
     TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(11 DOWNTO 0);
     SIGNAL current_state, next_state: state;
-    SIGNAL tags: tagarray :=("000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000","000000000000");
+    SIGNAL tags: tagarray ;
     BEGIN
     PROCESS(clock)
       BEGIN
@@ -60,25 +60,27 @@
   
     PROCESS(current_state)
       BEGIN
-        CASE current_state IS
-          WHEN hit_state =>
-            iaddr <= addr;
-            idelay <= '0';
-            ireq <= '0';
-            intwe <= '0';
-            intaddr <= addr(3 DOWNTO 0);
-            inst <= intrdata;
-            intwdata <= "0000000000000000";
-          WHEN wait_state =>
-            iaddr <= addr;
-            idelay <= '1';
-            ireq <= '1';
-            intwe <= '1';
-            intaddr <= addr(3 DOWNTO 0);
-            inst <= intrdata;
-            intwdata <= idata;
-            tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 4);
-        END CASE;
+      
+          CASE current_state IS
+            WHEN hit_state =>
+              iaddr <= addr;
+              idelay <= '0';
+              ireq <= '0';
+              intwe <= '0';
+              intaddr <= addr(3 DOWNTO 0);
+              inst <= intrdata;
+              intwdata <= "0000000000000000";
+            WHEN wait_state =>
+              iaddr <= addr;
+              idelay <= '1';
+              ireq <= '1';
+              intwe <= '1';
+              intaddr <= addr(3 DOWNTO 0);
+              inst <= intrdata;
+              intwdata <= idata;
+              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 4);
+          END CASE;
+          
     END PROCESS;
           
   END ARCHITECTURE Behavior;
