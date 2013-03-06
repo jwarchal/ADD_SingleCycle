@@ -62,9 +62,9 @@ tm "EolColHdrMgr"
 *14 (LogPort
 port (LogicalPort
 decl (Decl
-n "rst"
+n "c"
 t "std_logic"
-o 2
+o 1
 suid 1,0
 )
 )
@@ -73,9 +73,9 @@ uid 109,0
 *15 (LogPort
 port (LogicalPort
 decl (Decl
-n "c"
+n "rst"
 t "std_logic"
-o 1
+o 2
 suid 2,0
 )
 )
@@ -380,11 +380,11 @@ value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_l
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup3\\symbol.sb.info"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup_cache\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup3\\symbol.sb.user"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup_cache\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
@@ -404,11 +404,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup3"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup_cache"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup3"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup_cache"
 )
 (vvPair
 variable "date"
@@ -428,7 +428,7 @@ value "06"
 )
 (vvPair
 variable "entity_name"
-value "Hookup3"
+value "Hookup_cache"
 )
 (vvPair
 variable "ext"
@@ -480,7 +480,7 @@ value "03"
 )
 (vvPair
 variable "module_name"
-value "Hookup3"
+value "Hookup_cache"
 )
 (vvPair
 variable "month"
@@ -492,11 +492,11 @@ value "March"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup3\\symbol.sb"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\@hookup_cache\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup3\\symbol.sb"
+value "C:\\Users\\Vincent\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_lib\\hds\\Hookup_cache\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -552,11 +552,11 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:28:27"
+value "17:43:31"
 )
 (vvPair
 variable "unit"
-value "Hookup3"
+value "Hookup_cache"
 )
 (vvPair
 variable "user"
@@ -607,8 +607,8 @@ uid 115,0
 va (VaSet
 font "arial,8,0"
 )
-xt "16000,6500,17300,7500"
-st "rst"
+xt "16000,6500,16800,7500"
+st "c"
 blo "16000,7300"
 tm "CptPortNameMgr"
 )
@@ -618,14 +618,14 @@ uid 116,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2800,57000,3600"
-st "rst : IN     std_logic "
+xt "44000,2000,58000,2800"
+st "c   : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
-n "rst"
+n "c"
 t "std_logic"
-o 2
+o 1
 suid 1,0
 )
 )
@@ -651,8 +651,8 @@ uid 120,0
 va (VaSet
 font "arial,8,0"
 )
-xt "16000,7500,16800,8500"
-st "c"
+xt "16000,7500,17300,8500"
+st "rst"
 blo "16000,8300"
 tm "CptPortNameMgr"
 )
@@ -662,14 +662,14 @@ uid 121,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2000,58000,2800"
-st "c   : IN     std_logic  ;"
+xt "44000,2800,57000,3600"
+st "rst : IN     std_logic "
 )
 thePort (LogicalPort
 decl (Decl
-n "c"
+n "rst"
 t "std_logic"
-o 1
+o 2
 suid 2,0
 )
 )
@@ -703,8 +703,8 @@ uid 12,0
 va (VaSet
 font "arial,8,1"
 )
-xt "22200,16000,26000,17000"
-st "Hookup3"
+xt "22200,16000,28500,17000"
+st "Hookup_cache"
 blo "22200,16800"
 )
 )
@@ -756,7 +756,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "31200,50000,41700,51000"
+xt "31200,50000,41200,51000"
 st "
 by %user on %dd %month %year
 "
@@ -1034,7 +1034,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "31200,49000,45400,50000"
+xt "31200,49000,47400,50000"
 st "
 %library/%unit/%view
 "
@@ -1370,6 +1370,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 742,0
+lastUid 167,0
 activeModelName "Symbol:CDM"
 )
