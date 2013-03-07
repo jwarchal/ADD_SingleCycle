@@ -1,1 +1,1 @@
- -L ADD_SingleCycle_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays ADD_SingleCycle_lib.Hookup3(struct)
+ -L ADD_SingleCycle_lib -l transcript.txt -i -t ns -multisource_delay latest +typdelays ADD_SingleCycle_lib.Hookup_cache(struct)

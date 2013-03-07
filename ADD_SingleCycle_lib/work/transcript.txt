@@ -41,18 +41,11 @@ sim:/hookup3/Mem_en \
 sim:/hookup3/PC_mux1 \
 sim:/hookup3/RF_en \
 sim:/hookup3/RF_mux \
-sim:/hookup3/SEXT \
-sim:/hookup3/ZEXT_L \
-sim:/hookup3/ZEXT_R \
-sim:/hookup3/ack \
-sim:/hookup3/addrToMem \
-sim:/hookup3/addrToMem1 \
-sim:/hookup3/addrToRam \
-sim:/hookup3/b \
-sim:/hookup3/b1 \
-sim:/hookup3/b2 \
-sim:/hookup3/ccvector \
-sim:/hookup3/cin \
+sim:/hookup# The connection to HDS has been closed 
+# ** Warning: (vsim-31) Unable to unlink file "//psf/Home/Desktop/ECE/ADD_SingleCycle/ADD_SingleCycle/ADD_SingleCycle_lib/work/_opt__lock".
+# 
+# No such file or directory. (errno = ENOENT)
+up3/cin \
 sim:/hookup3/dataToMem \
 sim:/hookup3/dataToMem1 \
 sim:/hookup3/dataToRam \

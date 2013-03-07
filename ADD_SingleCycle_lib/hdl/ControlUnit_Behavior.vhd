@@ -25,7 +25,7 @@ END ENTITY ControlUnit;
 ARCHITECTURE Behavior OF ControlUnit IS
   
 BEGIN
-  PROCESS (InstMem)
+  PROCESS (InstMem, idelay, ddelay)
     VARIABLE topBits : std_logic_vector (2 DOWNTO 0);
     VARIABLE eightBit: std_logic;
     VARIABLE bottomBit: std_logic_vector (2 DOWNTO 0);
@@ -147,4 +147,3 @@ BEGIN
     
   END PROCESS;
 END ARCHITECTURE Behavior;
-

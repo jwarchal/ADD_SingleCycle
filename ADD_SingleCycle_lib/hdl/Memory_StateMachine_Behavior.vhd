@@ -32,7 +32,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
           END IF;
   END PROCESS;
   
-  PROCESS(wreq, rreq, ireq)
+  PROCESS(wreq, rreq, ireq, ackFromMem)
       BEGIN
         CASE current_state IS
             WHEN wfill_state =>
@@ -103,4 +103,3 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
     END PROCESS;
     
 END ARCHITECTURE Behavior;
-

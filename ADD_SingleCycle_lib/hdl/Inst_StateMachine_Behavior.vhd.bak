@@ -23,7 +23,7 @@
   ARCHITECTURE Behavior OF Inst_StateMachine IS
     TYPE state IS(hit_state, wait_state);
     TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(11 DOWNTO 0);
-    SIGNAL current_state, next_state: state;
+    SIGNAL current_state, next_state: state := wait_state;
     SIGNAL tags: tagarray ;
     BEGIN
     PROCESS(clock)

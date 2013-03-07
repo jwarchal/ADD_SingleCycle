@@ -21,9 +21,9 @@ END ENTITY Data_StateMachine;
 
 --
 ARCHITECTURE Behavior OF Data_StateMachine IS
-   TYPE state IS(hit_state, rreq_state, wreq_state);
+   TYPE state IS(hit_state, rreq_state, wreq_state, rlimbo_state, wlimbo_state);
    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(11 DOWNTO 0);
-   SIGNAL current_state, next_state: state;
+   SIGNAL current_state, next_state: state := hit_state;
    SIGNAL tags: tagarray; 
    BEGIN
     PROCESS(clock)
@@ -51,9 +51,9 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
                 next_state <= hit_state;
               ELSE
                 IF(rw_en = '0') THEN
-                  next_state <= rreq_state;
+                  next_state <= rlimbo_state;
                 ELSE
-                  next_state <= wreq_state;
+                  next_state <= wlimbo_state;
                 END IF;
               END IF;
             ELSE
@@ -73,6 +73,11 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
               ELSE
                 next_state <= hit_state;
               END IF;
+              
+            WHEN rlimbo_state =>
+              next_state <= rreq_state;
+            WHEN wlimbo_state =>
+              next_state <= wreq_state;
         END CASE;
     END PROCESS;
     
@@ -109,6 +114,26 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
               dataToRam <= dataFromP;
               dataToMem <= dataFromP;
               tags(Conv_integer(unsigned(addrFromP(3 DOWNTO 0)))) <= addrFromP(15 DOWNTO 4);
+            WHEN rlimbo_state =>
+              addrToMem <= addrFromP;
+              ddelay <= '1';
+              rreq <= '1';
+              wreq <= '0';
+              ramrw_en <= '1';  --1=write, write Mem data into ram
+              addrToRam <= addrFromP(3 DOWNTO 0);
+              dataToRam <= dataFromMem;
+              dataToP <= dataFromMem;
+              tags(Conv_integer(unsigned(addrFromP(3 DOWNTO 0)))) <= addrFromP(15 DOWNTO 4);
+            WHEN wlimbo_state =>
+              addrToMem <= addrFromP;
+              ddelay <= '1';
+              rreq <= '0';
+              wreq <= '1';
+              ramrw_en <= '1';  --1=write, write Mem data into ram
+              addrToRam <= addrFromP(3 DOWNTO 0);
+              dataToRam <= dataFromP;
+              dataToMem <= dataFromP;
+              tags(Conv_integer(unsigned(addrFromP(3 DOWNTO 0)))) <= addrFromP(15 DOWNTO 4);
         END CASE;
       
         
@@ -116,4 +141,3 @@ ARCHITECTURE Behavior OF Data_StateMachine IS
     
 
 END ARCHITECTURE Behavior;
-
