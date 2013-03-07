@@ -56,7 +56,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
                 next_State <= fill_state;
               END IF;
               
-            WHEN wait_state =>
+            WHEN wait_state => --Fix these if statements when we pipeline...
               IF (wreq = '1') THEN
                 next_state <= wfill_state;
               ELSIF (rreq = '1') THEN

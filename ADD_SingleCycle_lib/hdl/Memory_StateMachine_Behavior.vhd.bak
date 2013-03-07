@@ -21,7 +21,7 @@ END ENTITY Memory_StateMachine;
 --
 ARCHITECTURE Behavior OF Memory_StateMachine IS
   TYPE state IS(wfill_state, rfill_state, fill_state, wait_state);
-  SIGNAL current_state, next_state: state;
+  SIGNAL current_state, next_state: state := wait_state;
   SIGNAL delay : std_logic;
   BEGIN
     
@@ -32,7 +32,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
           END IF;
   END PROCESS;
   
-  PROCESS(wreq, rreq, ireq)
+  PROCESS(wreq, rreq, ireq, ackFromMem)
       BEGIN
         CASE current_state IS
             WHEN wfill_state =>
@@ -56,7 +56,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
                 next_State <= fill_state;
               END IF;
               
-            WHEN wait_state =>
+            WHEN wait_state => --Fix these if statements when we pipeline...
               IF (wreq = '1') THEN
                 next_state <= wfill_state;
               ELSIF (rreq = '1') THEN
@@ -103,4 +103,3 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
     END PROCESS;
     
 END ARCHITECTURE Behavior;
-

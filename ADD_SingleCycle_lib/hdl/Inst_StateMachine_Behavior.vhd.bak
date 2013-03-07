@@ -21,9 +21,9 @@
   
   --
   ARCHITECTURE Behavior OF Inst_StateMachine IS
-    TYPE state IS(hit_state, wait_state);
-    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(11 DOWNTO 0);
-    SIGNAL current_state, next_state: state := wait_state;
+    TYPE state IS(hit_state, wait_state, limbo_state);
+    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(15 DOWNTO 0);
+    SIGNAL current_state, next_state: state := hit_state;
     SIGNAL tags: tagarray ;
     BEGIN
     PROCESS(clock)
@@ -38,16 +38,17 @@
       BEGIN
         hit := '0';
         FOR i IN 0 TO 15 LOOP
-          IF(tags(i) = addr(15 DOWNTO 4)) THEN
+          IF(tags(i) = addr(15 DOWNTO 0)) THEN
             hit := '1';
           END IF;
         END LOOP;
+        
         CASE current_state IS
             WHEN hit_state =>
             IF(hit = '1') THEN
               next_state <= hit_state;
             ELSE
-              next_state <= wait_state;
+              next_state <= limbo_state;
             END IF;
             WHEN wait_state =>
             IF(ifilled = '0') THEN
@@ -55,10 +56,14 @@
             ELSE
               next_state <= hit_state;
             END IF;
+            WHEN limbo_state =>
+              next_state <= wait_state;
         END CASE;
+        
+        
     END PROCESS;
   
-    PROCESS(current_state)
+    PROCESS(current_state, clock)
       BEGIN
       
           CASE current_state IS
@@ -78,7 +83,16 @@
               intaddr <= addr(3 DOWNTO 0);
               inst <= intrdata;
               intwdata <= idata;
-              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 4);
+              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
+            WHEN limbo_state =>
+              iaddr <= addr;
+              idelay <= '1';
+              ireq <= '1';
+              intwe <= '1';
+              intaddr <= addr(3 DOWNTO 0);
+              inst <= intrdata;
+              intwdata <= idata;
+              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
           END CASE;
           
     END PROCESS;

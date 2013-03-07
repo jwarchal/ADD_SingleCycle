@@ -53,8 +53,9 @@ BEGIN
       ALU_R_mux <= "00";
       Mem_en <= '0';
       RF_en <= '0';
+   ELSE 
     --NOP
-    ELSIF (topBits = "000") THEN
+    IF (topBits = "000") THEN
       PC_mux <=  "00";
       RF_mux <= '0';
       ALU_L_mux <= "00";
@@ -144,6 +145,7 @@ BEGIN
       Mem_en <= '0';
       RF_en <= '0';
     END IF;
+  END IF;
     
   END PROCESS;
 END ARCHITECTURE Behavior;

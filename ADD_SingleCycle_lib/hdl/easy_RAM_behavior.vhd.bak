@@ -59,7 +59,7 @@ table(27) := To_stdlogicvector(X"E502");
 table(28) := To_stdlogicvector(X"E1FB");
 table(29) := To_stdlogicvector(X"E100");
 table(30) := To_stdlogicvector(X"0003");
-table(31) := To_stdlogicvector(X"00010");
+table(31) := To_stdlogicvector(X"0002");
 
           elsif (wr = '1') then
 	      table_index :=  CONV_INTEGER(hAddr(15 downto 0));
