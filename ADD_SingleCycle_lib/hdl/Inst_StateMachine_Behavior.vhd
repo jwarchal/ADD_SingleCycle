@@ -25,6 +25,7 @@
     TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(15 DOWNTO 0);
     SIGNAL current_state, next_state: state := hit_state;
     SIGNAL tags: tagarray ;
+    SIGNAL currentinst: std_logic_vector(15 DOWNTO 0);
     BEGIN
     PROCESS(clock)
       BEGIN
@@ -63,7 +64,7 @@
         
     END PROCESS;
   
-    PROCESS(current_state, clock)
+    PROCESS(current_state)
       BEGIN
       
           CASE current_state IS
@@ -73,15 +74,16 @@
               ireq <= '0';
               intwe <= '0';
               intaddr <= addr(3 DOWNTO 0);
+              currentinst <= inst;
               inst <= intrdata;
-              intwdata <= "0000000000000000";
+              intwdata <= idata;
             WHEN wait_state =>
               iaddr <= addr;
               idelay <= '1';
               ireq <= '1';
               intwe <= '1';
               intaddr <= addr(3 DOWNTO 0);
-              inst <= intrdata;
+              inst <= currentinst;
               intwdata <= idata;
               tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
             WHEN limbo_state =>
@@ -90,7 +92,7 @@
               ireq <= '1';
               intwe <= '1';
               intaddr <= addr(3 DOWNTO 0);
-              inst <= intrdata;
+              inst <= currentinst;
               intwdata <= idata;
               tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
           END CASE;
