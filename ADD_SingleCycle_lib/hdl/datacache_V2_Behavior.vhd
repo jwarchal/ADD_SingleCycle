@@ -12,8 +12,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY datacache_V2 IS
    PORT( 
-      addr : IN     std_logic_vector (3 DOWNTO 0);
       slicer : IN   std_logic_vector (1 DOWNTO 0);
+      addr : IN     std_logic_vector (3 DOWNTO 0);
       clk  : IN     std_logic;
       din  : IN     std_logic_vector (15 DOWNTO 0);
       we   : IN     std_logic;
