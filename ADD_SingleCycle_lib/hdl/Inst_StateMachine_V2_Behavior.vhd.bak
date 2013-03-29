@@ -11,22 +11,26 @@
   USE ieee.std_logic_1164.all;
   USE ieee.std_logic_arith.all;
   
-  ENTITY Inst_StateMachine IS
+  ENTITY Inst_StateMachine_V2 IS
     PORT ( clock, ifilled: IN std_logic;
-           addr, idata, intrdata: IN std_logic_vector (15 DOWNTO 0);
-           inst, iaddr, intwdata: OUT std_logic_vector (15 DOWNTO 0);
-           intaddr: OUT std_logic_vector (3 DOWNTO 0);
+           PC, instFromRAM: IN std_logic_vector (15 DOWNTO 0);
+           instFromMem : IN std_logic_vector (63 DOWNTO 0);
+           inst, addrToMem: OUT std_logic_vector (15 DOWNTO 0);
+           MMdataToRAM: OUT std_logic_vector (63 DOWNTO 0);
+           addr: OUT std_logic_vector (3 DOWNTO 0);
+           slicer: OUT std_logic_vector (1 DOWNTO 0);
            idelay, ireq, intwe: OUT std_logic );
-  END ENTITY Inst_StateMachine;
+  END ENTITY Inst_StateMachine_V2;
   
   --
-  ARCHITECTURE Behavior OF Inst_StateMachine IS
+  ARCHITECTURE Behavior OF Inst_StateMachine_V2 IS
     TYPE state IS(hit_state, wait_state, limbo_state);
-    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(15 DOWNTO 0);
+    TYPE tagarray IS ARRAY (0 TO 15) OF std_logic_vector(9 DOWNTO 0);
     SIGNAL current_state, next_state: state := hit_state;
     SIGNAL tags: tagarray ;
     SIGNAL currentinst: std_logic_vector(15 DOWNTO 0);
     BEGIN
+      
     PROCESS(clock)
       BEGIN
           IF (rising_edge(clock)) THEN
@@ -34,16 +38,17 @@
           END IF;
     END PROCESS;
   
-    PROCESS(addr, ifilled)
+    PROCESS(PC, ifilled)
     VARIABLE hit: std_logic := '0';
       BEGIN
-        hit := '0';
+        hit := '0'; --if hit=0 MISS in the cache, therefore, we need data from Main Mem.
         FOR i IN 0 TO 15 LOOP
-          IF(tags(i) = addr(15 DOWNTO 0)) THEN
-            hit := '1';
+          IF(tags(i) = PC(15 DOWNTO 6)) THEN
+            hit := '1'; -- HIT! Retrieve data from cache
           END IF;
         END LOOP;
         
+        --logic to simply change states.
         CASE current_state IS
             WHEN hit_state =>
             IF(hit = '1') THEN
@@ -60,8 +65,6 @@
             WHEN limbo_state =>
               next_state <= wait_state;
         END CASE;
-        
-        
     END PROCESS;
   
     PROCESS(current_state)
@@ -69,32 +72,34 @@
       
           CASE current_state IS
             WHEN hit_state =>
-              iaddr <= addr;
+              addrToMem <= PC;
               idelay <= '0';
               ireq <= '0';
               intwe <= '0';
-              intaddr <= addr(3 DOWNTO 0);
+              addr <= PC(5 DOWNTO 2);
+              slicer <= PC(1 DOWNTO 0);
               currentinst <= inst;
-              inst <= intrdata;
-              intwdata <= idata;
+              inst <= instFromRAM;
+              MMdataToRAM <= instFromMem;
             WHEN wait_state =>
-              iaddr <= addr;
+              addrToMem <= PC;
               idelay <= '1';
               ireq <= '1';
               intwe <= '1';
-              intaddr <= addr(3 DOWNTO 0);
+              addr <= PC(5 DOWNTO 2);
+              slicer <= PC(1 DOWNTO 0);
               inst <= currentinst;
-              intwdata <= idata;
-              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
+              MMdataToRAM <= instFromMem;
+              tags(Conv_integer(unsigned(PC(5 DOWNTO 2)))) <= PC(15 DOWNTO 6);
             WHEN limbo_state =>
-              iaddr <= addr;
+              addrToMem <= PC;
               idelay <= '1';
               ireq <= '1';
               intwe <= '1';
-              intaddr <= addr(3 DOWNTO 0);
+              addr <= PC(5 DOWNTO 2);
               inst <= currentinst;
-              intwdata <= idata;
-              tags(Conv_integer(unsigned(addr(3 DOWNTO 0)))) <= addr(15 DOWNTO 0);
+              MMdataToRAM <= instFromMem;
+              tags(Conv_integer(unsigned(PC(5 DOWNTO 2)))) <= PC(15 DOWNTO 6);
           END CASE;
           
     END PROCESS;

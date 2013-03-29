@@ -10,7 +10,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
-ENTITY cachedata IS
+ENTITY cachedata_lols_V2 IS
    PORT( 
       addr : IN     std_logic_vector (3 DOWNTO 0);
       slicer: IN    std_logic_vector (1 DOWNTO 0);
@@ -22,9 +22,9 @@ ENTITY cachedata IS
 
 -- Declarations
 
-END cachedata ;
+END cachedata_lols_V2 ;
 
-ARCHITECTURE lols OF cachedata IS
+ARCHITECTURE Behavior OF cachedata_lols_V2 IS
    TYPE MW_RAM_TYPE IS ARRAY (((2**4) -1) DOWNTO 0) OF std_logic_vector(63 DOWNTO 0);
    SIGNAL mw_ram_table : MW_RAM_TYPE := (OTHERS => "0000000000000000000000000000000000000000000000000000000000000000");
    SIGNAL mw_addr_reg: std_logic_vector(3 DOWNTO 0);
@@ -38,24 +38,43 @@ BEGIN
    ram_p_proc: PROCESS (clk)
    BEGIN
       IF (clk'EVENT AND clk='1') THEN
-         IF (we = '1') THEN
-            mw_ram_table(CONV_INTEGER(unsigned(addr))) <= din;
-         END IF;
          mw_addr_reg <= addr;
-      END IF;
+         IF (we = '1') THEN --if the data for the specific instruction wasn't in memory then....
+            --put the value from Main mem into the cache
+            mw_ram_table(CONV_INTEGER(unsigned(addr))) <= din; 
+            --give dout the correct 16 bits
+            IF ( slicer = "11") THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(addr)));
+              dout <= dtemp ( 63 DOWNTO 48);
+            ELSIF ( slicer = "10" ) THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(addr)));
+              dout <= dtemp ( 47 DOWNTO 32);
+            ELSIF ( slicer = "01" ) THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(addr)));
+              dout <= dtemp ( 31 DOWNTO 16);
+            ELSE
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(addr)));
+              dout <= dtemp ( 15 DOWNTO 0);
+            END IF;
+            
+          ELSE
+            
+            IF ( slicer = "11") THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
+              dout <= dtemp ( 63 DOWNTO 48);
+            ELSIF ( slicer = "10" ) THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
+              dout <= dtemp ( 47 DOWNTO 32);
+            ELSIF ( slicer = "01" ) THEN
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
+              dout <= dtemp ( 31 DOWNTO 16);
+            ELSE
+              dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
+              dout <= dtemp ( 15 DOWNTO 0);
+            END IF;
+            
+          END IF; 
       
-      IF ( slicer = "00") THEN
-        dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
-        dout <= dtemp ( 63 DOWNTO 48);
-      ELSIF ( slicer = "01" ) THEN
-        dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
-        dout <= dtemp ( 47 DOWNTO 32);
-      ELSIF ( slicer = "10" ) THEN
-        dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
-        dout <= dtemp ( 31 DOWNTO 16);
-      ELSE
-        dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
-        dout <= dtemp ( 15 DOWNTO 0);
       END IF;
       
    END PROCESS ram_p_proc;
@@ -63,4 +82,4 @@ BEGIN
           --dtemp <= mw_ram_table(CONV_INTEGER(unsigned(mw_addr_reg)));
           --dout <= dtemp(63 DOWNTO 48);
    
-END lols;
+END Behavior;

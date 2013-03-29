@@ -412,19 +412,19 @@ value "C:\\Users\\Rebecca\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_l
 )
 (vvPair
 variable "date"
-value "03/27/2013"
+value "03/28/2013"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "27"
+value "28"
 )
 (vvPair
 variable "entity_name"
@@ -552,7 +552,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:46:33"
+value "23:44:31"
 )
 (vvPair
 variable "unit"
@@ -619,8 +619,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2000,58000,2800"
-st "c   : IN     std_logic  ;
-"
+st "c   : IN     std_logic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -664,8 +663,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2800,57000,3600"
-st "rst : IN     std_logic 
-"
+st "rst : IN     std_logic "
 )
 thePort (LogicalPort
 decl (Decl
@@ -1372,6 +1370,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 121,0
+lastUid 144,0
 activeModelName "Symbol:CDM"
 )

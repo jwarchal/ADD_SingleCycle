@@ -7,52 +7,51 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.cachedata(lols) 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.Inst_StateMachine_V2(Behavior) 
+# ** Note: (vsim-3812) Design is being optimized...
 # 
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Inst_StateMachine_V2(Behavior)".
 # 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.cachedata(lols)#1
+# Loading work.inst_statemachine_v2(behavior)#1
 add wave  \
-sim:/cachedata/addr \
-sim:/cachedata/slicer \
-sim:/cachedata/clk \
-sim:/cachedata/din \
-sim:/cachedata/we \
-sim:/cachedata/dout \
-sim:/cachedata/mw_ram_table \
-sim:/cachedata/mw_addr_reg \
-sim:/cachedata/dtemp
-force -freeze sim:/cachedata/addr 0000 0
-force -freeze sim:/cachedata/clk 1 0, 0 {50 ns} -r 100
-force -freeze sim:/cachedata/din 1010111100000011101011110000001110101111000000111010111100000011 0
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /cachedata
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /cachedata
-run
-# 0
+sim:/inst_statemachine_v2/clock \
+sim:/inst_statemachine_v2/ifilled \
+sim:/inst_statemachine_v2/PC \
+sim:/inst_statemachine_v2/instFromRAM \
+sim:/inst_statemachine_v2/instFromMem \
+sim:/inst_statemachine_v2/inst \
+sim:/inst_statemachine_v2/addrToMem \
+sim:/inst_statemachine_v2/MMdataToRAM \
+sim:/inst_statemachine_v2/addr \
+sim:/inst_statemachine_v2/slicer \
+sim:/inst_statemachine_v2/idelay \
+sim:/inst_statemachine_v2/ireq \
+sim:/inst_statemachine_v2/intwe \
+sim:/inst_statemachine_v2/current_state \
+sim:/inst_statemachine_v2/next_state \
+sim:/inst_statemachine_v2/tags \
+sim:/inst_statemachine_v2/currentinst
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-run
-# 0
+#           File in use by: Rebecca  Hostname: ATHENA  ProcessID: 5484
 # 
-force -freeze sim:/cachedata/slicer 00 0
-force -freeze sim:/cachedata/we 1 0
-run
-# 0
+#           Attempting to use alternate WLF file "./wlft3ydjnb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-run
-# 0
+#           Using alternate file: ./wlft3ydjnb
 # 
+force -freeze sim:/inst_statemachine_v2/clock 1 0, 0 {50 ns} -r 100
+force -freeze sim:/inst_statemachine_v2/PC 0000000000000001 0
+force -freeze sim:/inst_statemachine_v2/instFromRAM 1111000010100010 0
 run
-# 0
-# 
+force -freeze sim:/inst_statemachine_v2/ifilled 1 0
 run
 # 0
 # 
@@ -65,6 +64,11 @@ run
 run
 # 0
 # 
+force -freeze sim:/inst_statemachine_v2/ifilled 0 0
+run
+# 0
+# 
+force -freeze sim:/inst_statemachine_v2/ifilled 1 0
 run
 # 0
 # 
@@ -74,6 +78,11 @@ run
 run
 # 0
 # 
+force -freeze sim:/inst_statemachine_v2/PC 0000000000000010 0
+run
+# 0
+# 
+force -freeze sim:/inst_statemachine_v2/instFromRAM 0000111111010010 0
 run
 # 0
 # 
@@ -83,53 +92,31 @@ run
 run
 # 0
 # 
-restart
-# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
-add wave  \
-sim:/cachedata/addr \
-sim:/cachedata/slicer \
-sim:/cachedata/clk \
-sim:/cachedata/din \
-sim:/cachedata/we \
-sim:/cachedata/dout \
-sim:/cachedata/mw_ram_table \
-sim:/cachedata/mw_addr_reg \
-sim:/cachedata/dtemp
-force -freeze sim:/cachedata/addr {1111} 0
-# Value length (5) does not equal array index length (4).
-# 
-# ** Error: (vsim-4011) Invalid force value: {1111} 0.
-# 
-force -freeze sim:/cachedata/slicer {00} 0
-# Value length (3) does not equal array index length (2).
-# 
-# ** Error: (vsim-4011) Invalid force value: {00} 0.
-# 
-force -freeze {sim:/cachedata/clk} 1 0, 0 {50 ns} -r 100
-# ** Error: (vish-4008) Object 'sim:/cachedata/clk' not found.
-# 
-force -freeze sim:/cachedata/din {1111111111111111101011110000001110101111000000111010111100000011} 0
-# Value length (65) does not equal array index length (64).
-# 
-# ** Error: (vsim-4011) Invalid force value: {1111111111111111101011110000001110101111000000111010111100000011} 0.
-# 
-force -freeze sim:/cachedata/we {1} 0
-# ** Error: (vsim-4026) Value "1" does not represent a literal of the enumeration type.
-# ** Error: (vsim-4011) Invalid force value: {1} 0.
-# 
+force -freeze sim:/inst_statemachine_v2/ifilled 0 0
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /cachedata
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 0 ns  Iteration: 0  Instance: /cachedata
 # 0
 # 
 run
+# 0
+# 
 run
+# 0
+# 
+force -freeze sim:/inst_statemachine_v2/ifilled 1 0
 run
-noforce sim:/cachedata/we
-noforce sim:/cachedata/slicer
+# 0
+# 
 run
+# 0
+# 
+run
+# 0
+# 
+noforce sim:/inst_statemachine_v2/PC
+force -freeze sim:/inst_statemachine_v2/PC 1010111100000000 0
+run
+# 0
+# 
 run
 run
 run
