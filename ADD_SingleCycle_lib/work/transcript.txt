@@ -7,84 +7,41 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.Data_StateMachine(Behavior) 
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.ram_delay_V2(Behavior) 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
-# 
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Data_StateMachine(Behavior)".
 # 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.data_statemachine(behavior)#1
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.math_real(body)
+# Loading work.ram_delay_v2(behavior)#1
 add wave  \
-sim:/data_statemachine/clock \
-sim:/data_statemachine/dfilled \
-sim:/data_statemachine/rw_en \
-sim:/data_statemachine/dcache_en \
-sim:/data_statemachine/addrFromP \
-sim:/data_statemachine/dataFromP \
-sim:/data_statemachine/dataFromMem \
-sim:/data_statemachine/dataFromRam \
-sim:/data_statemachine/dataToP \
-sim:/data_statemachine/addrToMem \
-sim:/data_statemachine/dataToMem \
-sim:/data_statemachine/dataToRam \
-sim:/data_statemachine/addrToRam \
-sim:/data_statemachine/slicer \
-sim:/data_statemachine/ddelay \
-sim:/data_statemachine/rreq \
-sim:/data_statemachine/wreq \
-sim:/data_statemachine/ramrw_en \
-sim:/data_statemachine/current_state \
-sim:/data_statemachine/next_state \
-sim:/data_statemachine/tags
+sim:/ram_delay_v2/rst \
+sim:/ram_delay_v2/hDIn \
+sim:/ram_delay_v2/wr \
+sim:/ram_delay_v2/rd \
+sim:/ram_delay_v2/ack \
+sim:/ram_delay_v2/hAddr \
+sim:/ram_delay_v2/hDOut
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Rebecca  Hostname: ATHENA  ProcessID: 5484
 # 
-#           Attempting to use alternate WLF file "./wlftedwhqd".
+#           Attempting to use alternate WLF file "./wlft5c40c1".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftedwhqd
+#           Using alternate file: ./wlft5c40c1
 # 
-force -freeze sim:/data_statemachine/clock 1 0, 0 {50 ns} -r 100
-force -freeze sim:/data_statemachine/rw_en 1 0
-force -freeze sim:/data_statemachine/dcache_en 1 0
-force -freeze sim:/data_statemachine/addrFromP 1111111111111111 0
-force -freeze sim:/data_statemachine/dataFromP 1010001000001111 0
-force -freeze sim:/data_statemachine/dataFromMem 0000111100001111 0
-force -freeze sim:/data_statemachine/dataFromRam 0011001100110011 0
+force -freeze sim:/ram_delay_v2/rst 1 0
+force -freeze sim:/ram_delay_v2/hDIn 1111000011110000111100001111000011110000111100001111000011110000 0
+force -freeze sim:/ram_delay_v2/wr 1 0
+force -freeze sim:/ram_delay_v2/rd 0 0
 run
-run
-# 0
-# 
-run
-# 0
-# 
-force -freeze sim:/data_statemachine/addrFromP 1010000011111100 0
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-force -freeze sim:/data_statemachine/dataFromP 1010001000001101 0
 run
 # 0
 # 
@@ -112,6 +69,7 @@ run
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v2/hAddr 0101111100001010 0
 run
 # 0
 # 
@@ -130,7 +88,10 @@ run
 run
 # 0
 # 
-force -freeze sim:/data_statemachine/addrFromP 1010000011001101 0
+run
+# 0
+# 
+force -freeze sim:/ram_delay_v2/rst 0 0
 run
 # 0
 # 
@@ -146,31 +107,131 @@ run
 run
 # 0
 # 
-force -freeze sim:/data_statemachine/addrFromP 0000111011011100 0
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+force -freeze sim:/ram_delay_v2/hAddr 0000000000001000 0
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+force -freeze sim:/ram_delay_v2/hAddr 0000000000000001 0
+force -freeze sim:/ram_delay_v2/hAddr 0000000000000010 0
 run
 # 0
 # 
 run
 run
 run
-force -freeze sim:/data_statemachine/addrFromP 0101110101010000 0
 run
 run
 run
-force -freeze sim:/data_statemachine/dataFromP 1111000011110000 0
 run
+force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
 run
-force -freeze sim:/data_statemachine/addrFromP 1100110011111100 0
-run
-run
-run
-noforce sim:/data_statemachine/rw_en
-force -freeze sim:/data_statemachine/rw_en 0 0
-run
-# 0
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 64 (63 downto 0). Right is 16 (63 downto 48).
+#    Time: 4300 ns  Iteration: 0  Process: /ram_delay_v2/line__35 File: C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
+# Fatal error in Process line__35 at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd line 86
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
 # 
 run
-run
-# 0
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
 # 
 run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 

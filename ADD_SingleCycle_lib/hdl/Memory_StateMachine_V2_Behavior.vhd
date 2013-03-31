@@ -11,15 +11,16 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
-ENTITY Memory_StateMachine IS
+ENTITY Memory_StateMachine_V2 IS
   PORT( clock, ireq, wreq, rreq, ackFromMem : IN std_logic;
         addrFromInst, addrFromData, dataFromMem, dataFromData : IN std_logic_vector(15 DOWNTO 0);
         memw_en, memr_en, ifilled, dfilled : OUT std_logic;
-        dataToMem, addrToMem : OUT std_logic_vector(15 DOWNTO 0));
-END ENTITY Memory_StateMachine;
+        addrToMem : OUT std_logic_vector(15 DOWNTO 0);
+        dataToMem : OUT std_logic_vector (63 DOWNTO 0));
+END ENTITY Memory_StateMachine_V2;
 
 --
-ARCHITECTURE Behavior OF Memory_StateMachine IS
+ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
   TYPE state IS(wfill_state, rfill_state, fill_state, wait_state);
   SIGNAL current_state, next_state: state := wait_state;
   SIGNAL delay : std_logic;
@@ -53,7 +54,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
               IF (ackFromMem = '1') THEN
                 next_state <= wait_state;
               ELSE
-                next_State <= fill_state;
+                next_state <= fill_state;
               END IF;
               
             WHEN wait_state => --Fix these if statements when we pipeline...
@@ -76,15 +77,17 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
             memr_en <= '0';
             ifilled <= '1';
             dfilled <= '1';
-            dataToMem <= "0000000000000000";
+            dataToMem <= "0000000000000000000000000000000000000000000000000000000000000000";
             addrToMem <= "0000000000000000";
+            
           WHEN wfill_state =>
             memw_en <= '1';
             memr_en <= '0';
             ifilled <= '1';
             dfilled <= '0';
-            dataToMem <= dataFromData;
             addrToMem <= addrFromData;
+            dataToMem <= dataFromData;
+            
           WHEN rfill_state =>
             memw_en <= '0';
             memr_en <=  '1';
@@ -92,6 +95,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
             dfilled <= '0';
             dataToMem <= "0000000000000000";
             addrToMem <= addrFromData;
+            
           WHEN fill_state =>
             memw_en <= '0';
             memr_en <= '1';
@@ -99,6 +103,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine IS
             dfilled <= '1';
             dataToMem <= "0000000000000000";
             addrToMem <= addrFromInst;
+            
         END CASE;
     END PROCESS;
     
