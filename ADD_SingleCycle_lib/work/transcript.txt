@@ -8,10 +8,6 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.ram_delay_V2(Behavior) 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# 
-# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
-# 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
@@ -25,69 +21,29 @@ sim:/ram_delay_v2/rst \
 sim:/ram_delay_v2/hDIn \
 sim:/ram_delay_v2/wr \
 sim:/ram_delay_v2/rd \
-sim:/ram_delay_v2/ack \
 sim:/ram_delay_v2/hAddr \
-sim:/ram_delay_v2/hDOut
+sim:/ram_delay_v2/hDOut \
+sim:/ram_delay_v2/ack \
+sim:/ram_delay_v2/tempval
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Rebecca  Hostname: ATHENA  ProcessID: 5484
 # 
-#           Attempting to use alternate WLF file "./wlft5c40c1".
+#           Attempting to use alternate WLF file "./wlft7ejt6d".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft5c40c1
+#           Using alternate file: ./wlft7ejt6d
 # 
 force -freeze sim:/ram_delay_v2/rst 1 0
-force -freeze sim:/ram_delay_v2/hDIn 1111000011110000111100001111000011110000111100001111000011110000 0
+force -freeze sim:/ram_delay_v2/hDIn 1010111101010000101011110101000010101111010100001010111101010000 0
+force -freeze sim:/ram_delay_v2/wr q 0
+# ** Error: (vsim-4026) Value "q" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: q 0.
+# 
 force -freeze sim:/ram_delay_v2/wr 1 0
 force -freeze sim:/ram_delay_v2/rd 0 0
+force -freeze sim:/ram_delay_v2/hAddr 0101111101010000 0
 run
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-force -freeze sim:/ram_delay_v2/hAddr 0101111100001010 0
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
 run
 # 0
 # 
@@ -125,7 +81,6 @@ run
 run
 # 0
 # 
-force -freeze sim:/ram_delay_v2/hAddr 0000000000001000 0
 run
 # 0
 # 
@@ -147,91 +102,246 @@ run
 run
 # 0
 # 
-force -freeze sim:/ram_delay_v2/hAddr 0000000000000001 0
-force -freeze sim:/ram_delay_v2/hAddr 0000000000000010 0
 run
 # 0
 # 
 run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
-run
-# ** Fatal: (vsim-3420) Array lengths do not match. Left is 64 (63 downto 0). Right is 16 (63 downto 48).
-#    Time: 4300 ns  Iteration: 0  Process: /ram_delay_v2/line__35 File: C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
-# Fatal error in Process line__35 at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd line 86
-# 
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
-# 
-force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
-# 
-force -freeze sim:/ram_delay_v2/hAddr 0000000000000111 0
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
 # 
 run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd 86 Process line__35
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
+# 
+run
+# 0
 # 

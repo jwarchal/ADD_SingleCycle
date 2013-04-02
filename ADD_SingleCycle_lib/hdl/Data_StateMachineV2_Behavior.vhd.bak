@@ -13,7 +13,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY Data_StateMachineV2 IS
   PORT ( clock, dfilled, rw_en, dcache_en : IN std_logic;
-         addrFromP, dataFromP, dataFromMem, dataFromRam: IN std_logic_vector(15 DOWNTO 0);
+         addrFromP, dataFromP, dataFromRam: IN std_logic_vector(15 DOWNTO 0);
+         dataFromMem: IN std_logic_vector (63 DOWNTO 0);
          dataToP, addrToMem, dataToMem, dataToRam: OUT std_logic_vector (15 DOWNTO 0);
          addrToRam: OUT std_logic_vector (3 DOWNTO 0);
          ddelay, rreq, wreq, ramrw_en : OUT std_logic;
@@ -104,8 +105,19 @@ ARCHITECTURE Behavior OF Data_StateMachineV2 IS
               wreq <= '0';
               ramrw_en <= '1';  --1=write, write Mem data into ram
               addrToRam <= addrFromP(5 DOWNTO 2);
-              dataToRam <= dataFromMem;
-              dataToP <= dataFromMem;
+              IF (slicer = "11") THEN
+                dataToRam <= dataFromMem (63 DOWNTO 48);
+                dataToP <= dataFromMem (63 DOWNTO 48);
+              ELSIF (slicer = "10") THEN
+                dataToRam <= dataFromMem (47 DOWNTO 32);
+                dataToP <= dataFromMem (47 DOWNTO 32);
+              ELSIF (slicer = "01") THEN
+                dataToRam <= dataFromMem (31 DOWNTO 16);
+                dataToP <= dataFromMem (31 DOWNTO 16 );
+              ELSE
+                dataToRam <= dataFromMem (15 DOWNTO 0);
+                dataToP <= dataFromMem (15 DOWNTO 0);
+              END IF;
               tags(Conv_integer(unsigned(addrFromP(5 DOWNTO 2)))) <= addrFromP(15 DOWNTO 6);
             WHEN wreq_state =>
               addrToMem <= addrFromP;

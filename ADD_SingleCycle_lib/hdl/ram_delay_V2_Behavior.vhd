@@ -22,16 +22,19 @@ ENTITY ram_delay_V2 IS
 	  hDIn  : in	std_logic_vector (63 DOWNTO 0);  -- data to memory
 	  wr    : in	std_logic;                       -- memory write control signal
 	  rd    : in	std_logic;                       -- memory read control signal
-	  ack    : out	std_logic;                       -- acknowledge signal from memory
 	  hAddr : in	std_logic_vector (15 DOWNTO 0);  -- memory address
-	  hDOut : out	std_logic_vector (63 DOWNTO 0)   -- data from memory
+	  hDOut : out	std_logic_vector (63 DOWNTO 0);   -- data from memory
+	  ack    : out	std_logic                      -- acknowledge signal from memory
   );
 END ENTITY ram_delay_V2;
 
 --
 ARCHITECTURE behavior OF ram_delay_V2 IS
   subtype table_address is integer range 0 to 15;
+  SIGNAL tempval : std_logic_vector(63 DOWNTO 0);
+
 begin
+
   process(hAddr,hDIn,wr,rd,rst)
 	  type counter_array is array (0 to 65535) of std_logic_vector(63 downto 0);
 	  variable table : counter_array;
@@ -39,8 +42,8 @@ begin
     variable seed1, seed2: positive;               -- Seed values for random generator
     variable rand: real;                           -- Random real-number value in range 0 to 1.0
     variable delay: time;                           -- delay in main memory
-  begin
 
+  begin
     ack <= '0';
     UNIFORM(seed1, seed2, rand);
     delay := (rand*0.0000001)*10 sec;              -- random delay between 0 and 1000 ns
@@ -81,19 +84,32 @@ table(31) := To_stdlogicvector(X"0000000000000002");
 
 
           elsif (wr = '1' and rd = '0') then
-            table_index :=  CONV_INTEGER(hAddr(15 downto 2));
             IF (hAddr(1 DOWNTO 0) = "11") THEN
-              table(table_index) := hDIn (63 DOWNTO 48);
+              tempval <= table(table_index);
+              tempval (63 DOWNTO 48) <= hDIn(63 DOWNTO 48);
+              table(table_index) := tempval;
+              hDOut <= table(table_index) after delay;
+              ack <= '1' after delay;
             ELSIF (hAddr (1 DOWNTO 0) = "10") THEN
-              table(table_index) := hDIn (47 DOWNTO 32);
+              tempval <= table(table_index);
+              tempval (47 DOWNTO 32) <= hDIn(47 DOWNTO 32);
+              table(table_index) := tempval;
+              hDOut <= table(table_index) after delay;
+              ack <= '1' after delay;
             ELSIF (hAddr (1 DOWNTO 0) = "01") THEN
-              table(table_index) := hDIn (31 DOWNTO 16);
+              tempval <= table(table_index);
+              tempval (31 DOWNTO 16) <= hDIn(31 DOWNTO 16);
+              table(table_index) := tempval;
+              hDOut <= table(table_index) after delay;
+              ack <= '1' after delay;
             ELSE
-              table(table_index) := hDIn (15 DOWNTO 0);
+              tempval <= table(table_index);
+              tempval (15 DOWNTO 0) <= hDIn(15 DOWNTO 0);
+              table(table_index) := tempval;
+              hDOut <= table(table_index) after delay;
+              ack <= '1' after delay;
             END IF;
             
-            hDOut <= table(table_index) after delay;
-            ack <= '1' after delay;
           elsif (rd = '1' and wr = '0') then
 	          table_index :=  CONV_INTEGER(hAddr(15 downto 2));       
             hDOut <= table(table_index) after delay;

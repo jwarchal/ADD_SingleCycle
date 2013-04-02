@@ -16,7 +16,6 @@ ENTITY Memory_StateMachine_V2 IS
         addrFromInst, addrFromData, dataFromMem, dataFromData : IN std_logic_vector(15 DOWNTO 0);
         memw_en, memr_en, ifilled, dfilled : OUT std_logic;
         addrToMem : OUT std_logic_vector(15 DOWNTO 0);
-        slicer : OUT std_logic_vector (1 DOWNTO 0);
         dataToMem : OUT std_logic_vector (63 DOWNTO 0));
 END ENTITY Memory_StateMachine_V2;
 
@@ -80,7 +79,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
             dfilled <= '1';
             dataToMem <= "0000000000000000000000000000000000000000000000000000000000000000";
             addrToMem <= "0000000000000000";
-            slicer <= "00";
+            
           WHEN wfill_state =>
             memw_en <= '1';
             memr_en <= '0';
@@ -88,7 +87,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
             dfilled <= '0';
             addrToMem <= addrFromData;
             dataToMem <= dataFromData;
-            slicer <= addrToMem (1 DOWNTO 0);
+            
           WHEN rfill_state =>
             memw_en <= '0';
             memr_en <=  '1';
@@ -96,7 +95,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
             dfilled <= '0';
             dataToMem <= "0000000000000000";
             addrToMem <= addrFromData;
-            slicer <= addrToMem (1 DOWNTO 0);
+            
           WHEN fill_state =>
             memw_en <= '0';
             memr_en <= '1';
@@ -104,7 +103,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
             dfilled <= '1';
             dataToMem <= "0000000000000000";
             addrToMem <= addrFromInst;
-            slicer <= addrToMem (1 DOWNTO 0);
+            
         END CASE;
     END PROCESS;
     
