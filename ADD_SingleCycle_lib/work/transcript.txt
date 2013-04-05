@@ -7,7 +7,11 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.ram_delay_V2(Behavior) 
+# vsim -L ADD_SingleCycle_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} ADD_SingleCycle_lib.ram_delay_v3(behavior) 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
 # Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
 # Loading std.standard
 # Loading std.textio(body)
@@ -15,108 +19,31 @@
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading ieee.math_real(body)
-# Loading work.ram_delay_v2(behavior)#1
+# Loading work.ram_delay_v3(behavior)#1
 add wave  \
-sim:/ram_delay_v2/rst \
-sim:/ram_delay_v2/hDIn \
-sim:/ram_delay_v2/wr \
-sim:/ram_delay_v2/rd \
-sim:/ram_delay_v2/hAddr \
-sim:/ram_delay_v2/hDOut \
-sim:/ram_delay_v2/ack \
-sim:/ram_delay_v2/tempval
+sim:/ram_delay_v3/rst \
+sim:/ram_delay_v3/hDIn \
+sim:/ram_delay_v3/wr \
+sim:/ram_delay_v3/rd \
+sim:/ram_delay_v3/ack \
+sim:/ram_delay_v3/hAddr \
+sim:/ram_delay_v3/hDOut
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Rebecca  Hostname: ATHENA  ProcessID: 5484
 # 
-#           Attempting to use alternate WLF file "./wlft7ejt6d".
+#           Attempting to use alternate WLF file "./wlft9tqn3b".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft7ejt6d
+#           Using alternate file: ./wlft9tqn3b
 # 
-force -freeze sim:/ram_delay_v2/rst 1 0
-force -freeze sim:/ram_delay_v2/hDIn 1010111101010000101011110101000010101111010100001010111101010000 0
-force -freeze sim:/ram_delay_v2/wr q 0
-# ** Error: (vsim-4026) Value "q" does not represent a literal of the enumeration type.
-# ** Error: (vsim-4011) Invalid force value: q 0.
-# 
-force -freeze sim:/ram_delay_v2/wr 1 0
-force -freeze sim:/ram_delay_v2/rd 0 0
-force -freeze sim:/ram_delay_v2/hAddr 0101111101010000 0
-run
-run
-# 0
-# 
-force -freeze sim:/ram_delay_v2/rst 0 0
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
+force -freeze sim:/ram_delay_v3/rst 1 0
+force -freeze sim:/ram_delay_v3/hDIn 1010000011110101 0
+force -freeze sim:/ram_delay_v3/wr 1 0
+force -freeze sim:/ram_delay_v3/rd 0 0
+force -freeze sim:/ram_delay_v3/hAddr 0101101011110101 0
 run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
-run
-# 0
-# 
+force -freeze sim:/ram_delay_v3/rst 0 0
 run
 # 0
 # 
@@ -162,6 +89,7 @@ run
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v3/hAddr 0101101011110111 0
 run
 # 0
 # 
@@ -192,6 +120,8 @@ run
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v3/wr 0 0
+force -freeze sim:/ram_delay_v3/rd 1 0
 run
 # 0
 # 
@@ -237,11 +167,10 @@ run
 run
 # 0
 # 
-run
-# 0
+force -freeze sim:/ram_delay_v3/hAddr 010110101111111 0
+# Value length (15) does not equal array index length (16).
 # 
-run
-# 0
+# ** Error: (vsim-4011) Invalid force value: 010110101111111 0.
 # 
 run
 # 0
@@ -264,33 +193,58 @@ run
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v3/hAddr 1010111100001111 0
 run
+# ** Fatal: (vsim-3421) Value -20724 is out of range 0 to 65535.
+#    Time: 4800 ns  Iteration: 0  Process: /ram_delay_v3/line__35 File: C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
 # 0
+# Fatal error in Process line__35 at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd line 91
 # 
-run
-# 0
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd 91 Process line__35
 # 
 run
-# 0
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd 91 Process line__35
 # 
 run
-# 0
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd 91 Process line__35
 # 
 run
-# 0
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd 91 Process line__35
 # 
-run
-# 0
+# hds_restart 
+restart -force
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # 
-run
-# 0
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
 # 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.math_real(body)
+# Loading work.ram_delay_v3(behavior)#1
+force -freeze sim:/ram_delay_v3/rst 0 0
+force -freeze sim:/ram_delay_v3/hDIn 1010111100001010 0
+force -freeze sim:/ram_delay_v3/wr 1 0
+force -freeze sim:/ram_delay_v3/rd 0 0
+force -freeze sim:/ram_delay_v3/hAddr 0000000000000010 0
+force -freeze sim:/ram_delay_v3/wr 0 0
+force -freeze sim:/ram_delay_v3/rd 1 0
 run
-# 0
-# 
+force -freeze sim:/ram_delay_v3/rst 1 0
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v3/rst 0 0
 run
 # 0
 # 
@@ -324,6 +278,9 @@ run
 run
 # 0
 # 
+force -freeze sim:/ram_delay_v3/wr 1 0
+force -freeze sim:/ram_delay_v3/rd 0 0
+force -freeze sim:/ram_delay_v3/hAddr 0000000000000010 0
 run
 # 0
 # 

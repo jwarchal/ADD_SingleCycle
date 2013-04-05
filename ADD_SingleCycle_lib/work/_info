@@ -4,9 +4,9 @@ K3
 cModel Technology
 Z0 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
 T_opt
-V=^IG0Whmlgjzbej:nAVMR0
-04 12 8 work ram_delay_v2 behavior 1
-=2-c485081e4e89-515b4056-2f0-fd4
+V_>WMX3OTKIIWelB_8hgoh1
+04 12 8 work ram_delay_v3 behavior 1
+=2-c485081e4e89-515efe7d-273-c2c
 Z1 o-quiet +acc -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
 n@_opt
 Z2 OL;O;10.1c;51
@@ -893,7 +893,7 @@ R16
 !s100 T11zVOm;P7h3L3KY9Al=11
 !i10b 1
 Eram_delay_v2
-Z138 w1364931130
+Z138 w1365173320
 R84
 R85
 R5
@@ -907,7 +907,7 @@ L19
 VPd=R3HDJ=RJLJ5XD6^Ue=1
 R11
 33
-Z141 !s108 1364934739.676000
+Z141 !s108 1365176923.003000
 R13
 Z142 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd|
 R15
@@ -921,9 +921,9 @@ R5
 R6
 R7
 DEx4 work 12 ram_delay_v2 0 22 Pd=R3HDJ=RJLJ5XD6^Ue=1
-l36
+l37
 L32
-V1=8<3Mlg8_Z[_2JjJ1km91
+VmT<]6=5PSiJGlaN=2IAU00
 R11
 33
 R141
@@ -931,24 +931,65 @@ R13
 R142
 R15
 R16
-!s100 kz?CVRBoVm31EK`:@b[[=1
+!s100 Z?K2JoQ`0OZGKIhH8gEMF1
+!i10b 1
+Eram_delay_v3
+Z143 w1365176421
+R84
+R85
+R5
+R6
+R7
+R8
+Z144 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
+Z145 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
+l0
+L19
+VAaI0S?5OV7zV9a0o_ISFj3
+R11
+32
+Z146 !s108 1365180026.544000
+R76
+Z147 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd|
+R51
+R16
+!s100 CzDe_Pcj1jjgJULQRjOPN1
+!i10b 1
+Abehavior
+R84
+R85
+R5
+R6
+R7
+DEx4 work 12 ram_delay_v3 0 22 AaI0S?5OV7zV9a0o_ISFj3
+l34
+L32
+Vk7KDiMBUhSbg:J^H>kTHm0
+R11
+32
+R146
+R76
+R147
+R51
+R16
+!s100 MO:1BBSg?3GgO=TY;Y7Pz2
 !i10b 1
 Eregisterfile
-Z143 w1361205263
+Z148 w1361205263
 R5
 R6
 R7
 R45
-Z144 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
-Z145 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z149 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z150 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
 l0
 L15
 VHQ@Jba?O40<bNWMaVmJ342
 R11
 33
-Z146 !s108 1361205268.780000
+Z151 !s108 1361205268.780000
 R60
-Z147 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
+Z152 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
 R15
 R16
 !s100 CkVjK^2=DgfDok22b9@F[2
@@ -963,9 +1004,9 @@ L25
 V^]35M<>Ol9R=RTX@L0Bz=0
 R11
 33
-R146
+R151
 R60
-R147
+R152
 R15
 R16
 !s100 6g`TEWj^L;^M97U_QGz1g2
