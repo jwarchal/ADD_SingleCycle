@@ -13,10 +13,11 @@ USE ieee.std_logic_arith.all;
 
 ENTITY Memory_StateMachine_V2 IS
   PORT( clock, ireq, wreq, rreq, ackFromMem : IN std_logic;
-        addrFromInst, addrFromData, dataFromMem, dataFromData : IN std_logic_vector(15 DOWNTO 0);
+        addrFromInst, addrFromData, dataFromData : IN std_logic_vector(15 DOWNTO 0);
+        dataFromMem : IN std_logic_vector (63 DOWNTO 0);
         memw_en, memr_en, ifilled, dfilled : OUT std_logic;
         addrToMem : OUT std_logic_vector(15 DOWNTO 0);
-        dataToMem : OUT std_logic_vector (63 DOWNTO 0));
+        dataToMem : OUT std_logic_vector (15 DOWNTO 0));
 END ENTITY Memory_StateMachine_V2;
 
 --
@@ -77,7 +78,7 @@ ARCHITECTURE Behavior OF Memory_StateMachine_V2 IS
             memr_en <= '0';
             ifilled <= '1';
             dfilled <= '1';
-            dataToMem <= "0000000000000000000000000000000000000000000000000000000000000000";
+            dataToMem <= "0000000000000000";
             addrToMem <= "0000000000000000";
             
           WHEN wfill_state =>

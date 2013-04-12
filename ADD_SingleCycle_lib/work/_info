@@ -4,9 +4,9 @@ K3
 cModel Technology
 Z0 d\\psf\Home\Desktop\ECE\ADD_SingleCycle\ADD_SingleCycle_lib\work
 T_opt
-V_>WMX3OTKIIWelB_8hgoh1
-04 12 8 work ram_delay_v3 behavior 1
-=2-c485081e4e89-515efe7d-273-c2c
+VWcd7D9af0ST>EXNnGe^;82
+04 12 6 work hookup_cache struct 1
+=1-c485081e4e89-51681c52-1af-11d0
 Z1 o-quiet +acc -auto_acc_if_foreign -work ADD_SingleCycle_lib -L ADD_SingleCycle_lib
 n@_opt
 Z2 OL;O;10.1c;51
@@ -64,33 +64,33 @@ R16
 !s100 N0MfjGKTCB_;;N@5B99W41
 !i10b 1
 Ecachedata
-Z17 w1364518410
+Z17 w1362621824
 R5
 R6
 R7
 R8
-Z18 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd
-Z19 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd
+Z18 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols.vhd
+Z19 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols.vhd
 l0
 L13
-Vb9;_5YicARdlORVC8[3SS2
+VhBIhXmo^bdCkXcDJn4Ub03
 R11
 33
-Z20 !s108 1364522048.411000
+Z20 !s108 1365777389.035000
 R13
-Z21 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd|
+Z21 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_Behavior.vhd|
 R15
 R16
-!s100 LSMaMU3zWk5CHkBS0KhWb1
+!s100 eKe;if@akQh;n`4?SVI`@1
 !i10b 1
 Alols
 R5
 R6
 R7
-DEx4 work 9 cachedata 0 22 b9;_5YicARdlORVC8[3SS2
-l32
-L27
-VVYe2lKW2=[TcfFEAC36o`0
+DEx4 work 9 cachedata 0 22 hBIhXmo^bdCkXcDJn4Ub03
+l31
+L26
+VZ3XkZF4?f=Qj84EkNcB[<3
 R11
 33
 R20
@@ -98,24 +98,61 @@ R13
 R21
 R15
 R16
-!s100 3FBB^k^3R81>0GZEZSf>J0
+!s100 W_]c[J[WbZT3h2AdbQRPW2
 !i10b 1
-Eccreg
-Z22 w1361549734
+Ecachedata_lols_v2
+Z22 w1364522756
 R5
 R6
 R7
 R8
-Z23 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd
-Z24 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd
+Z23 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd
+Z24 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd
+l0
+L13
+VfXn?GGl;_;LfNgQ02`<lS2
+R11
+33
+Z25 !s108 1365776271.928000
+Z26 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/Rebecca/AppData/Local/Temp/Files2|
+Z27 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/cachedata_lols_V2_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd|
+R15
+R16
+!s100 dHPZifHjzL518Gm=`Nkk]2
+!i10b 1
+Abehavior
+R5
+R6
+R7
+DEx4 work 17 cachedata_lols_v2 0 22 fXn?GGl;_;LfNgQ02`<lS2
+l32
+L27
+Ve5;hl54eS7U@Jcj0e8b]20
+R11
+33
+R25
+R26
+R27
+R15
+R16
+!s100 76I4A_J5XlPJ0C;V5^9=82
+!i10b 1
+Eccreg
+Z28 w1361549734
+R5
+R6
+R7
+R8
+Z29 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd
+Z30 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd
 l0
 L14
 V3414JJ4cTz_RgD0X[Iia_0
 R11
 33
-Z25 !s108 1361549739.800000
+Z31 !s108 1361549739.800000
 R13
-Z26 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd|
+Z32 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/CCReg_Behavior.vhd|
 R15
 R16
 !s100 JEi9PJHeTai_YXNU0KlN>1
@@ -130,29 +167,29 @@ L21
 VCfHlY33[c3[4AZn?^U=0g1
 R11
 33
-R25
+R31
 R13
-R26
+R32
 R15
 R16
 !s100 PQSGea=4Hh;aEbza;`5bA1
 !i10b 1
 Econtrolunit
-Z27 w1362626171
+Z33 w1362626171
 R5
 R6
 R7
 R8
-Z28 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
-Z29 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
+Z34 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
+Z35 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd
 l0
 L14
 V7HYCiVYALc<ee]4NVlCIf2
 R11
 33
-Z30 !s108 1364066673.390000
-R13
-Z31 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
+R25
+R26
+R27
 R15
 R16
 !s100 2hClW`CN>G9ehU]Xd0?A?2
@@ -167,113 +204,150 @@ L25
 VlG1:K`Yami8BTE]VVU9_?3
 R11
 33
-R30
-R13
-R31
+R25
+R26
+R27
 R15
 R16
 !s100 P3eWD8A2?_c<PdRLe<VUn3
 !i10b 1
 Edata_statemachine
-Z32 w1364571105
+R17
 R5
 R6
 R7
 R8
-Z33 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_V2_Behavior.vhd
-Z34 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_V2_Behavior.vhd
+Z36 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_Behavior.vhd
+Z37 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_Behavior.vhd
 l0
 L14
-V>n5CiZWZDdzlZiL?];98]0
+V`0li?16bhWn>In0n93Vee2
 R11
 33
-Z35 !s108 1364574745.468000
+R20
 R13
-Z36 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_V2_Behavior.vhd|
+R21
 R15
 R16
-!s100 Xkl5z111B9G<RN@M^I>Ld3
+!s100 :eAR2[SUXQk]`=_2FL]m;2
 !i10b 1
 Abehavior
 R5
 R6
 R7
-DEx4 work 17 data_statemachine 0 22 >n5CiZWZDdzlZiL?];98]0
-l29
-L24
-VPahbcUbP^ICJ6HH^1[EhV1
+DEx4 work 17 data_statemachine 0 22 `0li?16bhWn>In0n93Vee2
+l28
+L23
+V;M2ged=A7NU61[Ze:_N4@3
 R11
 33
-R35
+R20
 R13
-R36
+R21
 R15
 R16
-!s100 ^D>R5[Y<abW<AV;`^kgN]0
+!s100 Ti2G1=U;B>UT5m4RR[eGJ0
 !i10b 1
-Edatacache_v2
-Z37 w1364568767
+Edata_statemachinev2
+Z38 w1364759498
 R5
 R6
 R7
 R8
-Z38 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd
-Z39 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd
+Z39 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachineV2_Behavior.vhd
+Z40 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachineV2_Behavior.vhd
 l0
-L13
-V5<9A;Rk6cQ>]cg=IA^NOJ2
+L14
+VWU^]O5b_amd_g77dVM6^82
 R11
 33
-Z40 !s108 1364572464.339000
+Z41 !s108 1365776271.351000
 R13
-Z41 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd|
+Z42 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachineV2_Behavior.vhd|
 R15
 R16
-!s100 gZ6W3LBnJMic@@WJ]ik=o0
+!s100 D2jaEH@hK9B[Vnjag[Lh42
 !i10b 1
 Abehavior
 R5
 R6
 R7
-DEx4 work 12 datacache_v2 0 22 5<9A;Rk6cQ>]cg=IA^NOJ2
+DEx4 work 19 data_statemachinev2 0 22 WU^]O5b_amd_g77dVM6^82
+l30
+L25
+Vmkg_EhNl5^kbh4XZTEh=R3
+R11
+33
+R41
+R13
+R42
+R15
+R16
+!s100 >U2Y0?_cRI:EBnlSedVV_1
+!i10b 1
+Edatacache_v2
+Z43 w1364577330
+R5
+R6
+R7
+R8
+Z44 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd
+Z45 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/datacache_V2_Behavior.vhd
+l0
+L13
+VCf@MRJMDe;mm@4QhHVTU]3
+R11
+33
+R41
+R13
+R42
+R15
+R16
+!s100 i_o^9BhGI5>H3Zni[90aj1
+!i10b 1
+Abehavior
+R5
+R6
+R7
+DEx4 work 12 datacache_v2 0 22 Cf@MRJMDe;mm@4QhHVTU]3
 l33
 L27
 VHa35FFXMnVzJIN1m@E7Am2
 R11
 33
-R40
-R13
 R41
+R13
+R42
 R15
 R16
 !s100 aWPg9@R@L1fA:787<L@OO3
 !i10b 1
 Eeasy_ram_simu
-Z42 w1361580537
-Z43 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z46 w1361580537
+Z47 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R5
-Z44 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z48 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 R6
 R7
-Z45 dC:\Users\Vincent\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
-Z46 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
-Z47 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
+Z49 dC:\Users\Vincent\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
+Z50 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
+Z51 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd
 l0
 L10
 Vb_M:7PEPbFQaKDT?JIj:W1
 R11
 32
-Z48 !s108 1361580563.774000
-Z49 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Vincent/AppData/Local/Temp/Files0|
-Z50 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd|C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd|
-Z51 o-work ADD_SingleCycle_lib -nologo
+Z52 !s108 1361580563.774000
+Z53 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Vincent/AppData/Local/Temp/Files0|
+Z54 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd|C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/easy_RAM_behavior.vhd|
+Z55 o-work ADD_SingleCycle_lib -nologo
 R16
 !s100 oW<Sh1PiL;SMnSQFVA0hS2
 !i10b 1
 Abehavior
-R43
+R47
 R5
-R44
+R48
 R6
 R7
 DEx4 work 13 easy_ram_simu 0 22 b_M:7PEPbFQaKDT?JIj:W1
@@ -282,29 +356,29 @@ L21
 Vm4BmOTdYaf2[ZJH[2nLWR3
 R11
 32
-R48
-R49
-R50
-R51
+R52
+R53
+R54
+R55
 R16
 !s100 Zn]bWKY9L0zb`<jQY34d12
 !i10b 1
 Eextendblock
-Z52 w1360775592
+Z56 w1360775592
 R5
 R6
 R7
-Z53 dC:\Users\jwarchal\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
-Z54 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
-Z55 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
+Z57 dC:\Users\jwarchal\Documents\GitHub\ADD_SingleCycle\ADD_SingleCycle_lib\work
+Z58 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
+Z59 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd
 l0
 L14
 V8Ae:aMA;Kn=Ob58[IOJGn2
-Z56 OE;C;10.1c;51
+Z60 OE;C;10.1c;51
 33
-Z57 !s108 1360775600.739000
-Z58 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/jwarchal/AppData/Local/Temp/Files0|
-Z59 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|
+Z61 !s108 1360775600.739000
+Z62 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/jwarchal/AppData/Local/Temp/Files0|
+Z63 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|
 R15
 R16
 !s100 X2Xm2SG=bVTdmijAS?Zej3
@@ -317,11 +391,11 @@ DEx4 work 11 extendblock 0 22 8Ae:aMA;Kn=Ob58[IOJGn2
 l21
 L20
 VSfESad<9T^_d=iMQCcZ?E0
-R56
+R60
 33
-R57
-R58
-R59
+R61
+R62
+R63
 R15
 R16
 !s100 0IB=hjXmL[`N:@gJjM56k2
@@ -331,7 +405,7 @@ w1360704396
 R5
 R6
 R7
-R45
+R49
 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Hookup_Hookuparch.vhd
 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Hookup_Hookuparch.vhd
 l0
@@ -339,7 +413,7 @@ L14
 Vb4zK>8l`lleoon>7OPlC>0
 R11
 33
-Z60 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/Vincent/AppData/Local/Temp/Files0|
+Z64 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/Vincent/AppData/Local/Temp/Files0|
 R15
 R16
 !s108 1361049654.291000
@@ -347,39 +421,39 @@ R16
 !s100 N_I80Ql?VIeVD<A24jZPU3
 !i10b 1
 Ehookup2
-Z61 w1361580563
+Z65 w1361580563
 R5
 R6
 R7
-R45
-Z62 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
-Z63 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
+R49
+Z66 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
+Z67 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup2_struct.vhd
 l0
 L13
 V]N9gQ9P2[977B2TmieS;=3
 R11
 32
-R48
-R49
-R50
-R51
+R52
+R53
+R54
+R55
 R16
 !s100 j5Kg_<NDUamWc@m^8_U6n2
 !i10b 1
 Astruct
-Z64 DEx19 add_singlecycle_lib 7 mux4to1 0 22 =84i0_47Z1HQ;c07MTd7z2
-Z65 DEx19 add_singlecycle_lib 7 mux2to1 0 22 1OS_HaOEonI?7aQ7jil0P0
+Z68 DEx19 add_singlecycle_lib 7 mux4to1 0 22 =84i0_47Z1HQ;c07MTd7z2
+Z69 DEx19 add_singlecycle_lib 7 mux2to1 0 22 1OS_HaOEonI?7aQ7jil0P0
 DEx19 add_singlecycle_lib 13 easy_ram_simu 0 22 b_M:7PEPbFQaKDT?JIj:W1
-Z66 DEx19 add_singlecycle_lib 3 alu 0 22 ag@h[3M^^L8dQ@:2nZScb1
-Z67 DEx19 add_singlecycle_lib 12 registerfile 0 22 HQ@Jba?O40<bNWMaVmJ342
-Z68 DEx19 add_singlecycle_lib 2 pc 0 22 ;e>2Ok2OUHIzH;;9cNf000
-Z69 DEx19 add_singlecycle_lib 9 increment 0 22 P1n_GeN6O:b8kES;N3oAY2
-Z70 DEx19 add_singlecycle_lib 11 extendblock 0 22 8Ae:aMA;Kn=Ob58[IOJGn2
+Z70 DEx19 add_singlecycle_lib 3 alu 0 22 ag@h[3M^^L8dQ@:2nZScb1
+Z71 DEx19 add_singlecycle_lib 12 registerfile 0 22 HQ@Jba?O40<bNWMaVmJ342
+Z72 DEx19 add_singlecycle_lib 2 pc 0 22 ;e>2Ok2OUHIzH;;9cNf000
+Z73 DEx19 add_singlecycle_lib 9 increment 0 22 P1n_GeN6O:b8kES;N3oAY2
+Z74 DEx19 add_singlecycle_lib 11 extendblock 0 22 8Ae:aMA;Kn=Ob58[IOJGn2
 DEx19 add_singlecycle_lib 11 controlunit 0 22 c2GAV<azSPRN9baA<F2De3
-Z71 DEx19 add_singlecycle_lib 5 ccreg 0 22 3414JJ4cTz_RgD0X[Iia_0
+Z75 DEx19 add_singlecycle_lib 5 ccreg 0 22 3414JJ4cTz_RgD0X[Iia_0
 DEx4 work 7 hookup2 0 22 ]N9gQ9P2[977B2TmieS;=3
-R43
-R44
+R47
+R48
 R5
 R6
 R7
@@ -388,52 +462,52 @@ L40
 VgE:BAZ^mYCff[oIEDK5092
 R11
 32
-R48
-R49
-R50
-R51
+R52
+R53
+R54
+R55
 R16
 !s100 iGzkHSGS6SK]V7V98iVlM2
 !i10b 1
 Ehookup3
-Z72 w1362451263
+Z76 w1362451263
 R5
 R6
 R7
 R8
-Z73 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd
-Z74 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd
+Z77 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd
+Z78 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd
 l0
 L13
 Vk@DJVlln<`hg32Z[hi0:?2
 R11
 32
-Z75 !s108 1362451264.269000
-Z76 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Rebecca/AppData/Local/Temp/Files0|
-Z77 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd|
-R51
+Z79 !s108 1362451264.269000
+Z80 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Rebecca/AppData/Local/Temp/Files0|
+Z81 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup3_struct.vhd|
+R55
 R16
 !s100 HfX>N=hgSE2X7gmiS`DD@2
 !i10b 1
 Astruct
-Z78 DEx19 add_singlecycle_lib 9 ram_delay 0 22 8W0c@cfPo3j?=FD4jOiLk3
-R64
-R65
-Z79 DEx19 add_singlecycle_lib 9 cachedata 0 22 hBIhXmo^bdCkXcDJn4Ub03
-R66
-R67
+Z82 DEx19 add_singlecycle_lib 9 ram_delay 0 22 8W0c@cfPo3j?=FD4jOiLk3
 R68
-Z80 DEx19 add_singlecycle_lib 19 memory_statemachine 0 22 0XWX6EL74^O54ZVB6QaLV2
-Z81 DEx19 add_singlecycle_lib 17 inst_statemachine 0 22 S6bKb4m`[VPYz=[ibE;gM0
 R69
+Z83 DEx19 add_singlecycle_lib 9 cachedata 0 22 hBIhXmo^bdCkXcDJn4Ub03
 R70
-Z82 DEx19 add_singlecycle_lib 17 data_statemachine 0 22 `0li?16bhWn>In0n93Vee2
-Z83 DEx19 add_singlecycle_lib 11 controlunit 0 22 7HYCiVYALc<ee]4NVlCIf2
 R71
+R72
+Z84 DEx19 add_singlecycle_lib 19 memory_statemachine 0 22 0XWX6EL74^O54ZVB6QaLV2
+Z85 DEx19 add_singlecycle_lib 17 inst_statemachine 0 22 S6bKb4m`[VPYz=[ibE;gM0
+R73
+R74
+Z86 DEx19 add_singlecycle_lib 17 data_statemachine 0 22 `0li?16bhWn>In0n93Vee2
+Z87 DEx19 add_singlecycle_lib 11 controlunit 0 22 7HYCiVYALc<ee]4NVlCIf2
+R75
 DEx4 work 7 hookup3 0 22 k@DJVlln<`hg32Z[hi0:?2
-Z84 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R43
-Z85 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z88 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R47
+Z89 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
 R5
 R6
 R7
@@ -442,51 +516,51 @@ L41
 V?A_mAo;`dQ0l:clTR2L7Q3
 R11
 32
-R75
-R76
-R77
-R51
+R79
+R80
+R81
+R55
 R16
 !s100 W8LmdNihcjVIZ0eAz?_lz2
 !i10b 1
 Ehookup_cache
-Z86 w1364066554
+Z90 w1365773886
 R5
 R6
 R7
 R8
-Z87 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd
-Z88 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd
+Z91 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd
+Z92 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd
 l0
 L13
 V3CbgYPH;jJGi[MW`9TEKf0
 R11
 32
-Z89 !s108 1364070154.705000
-Z90 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Rebecca/AppData/Local/Temp/Files1|
-Z91 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd|
-R51
+Z93 !s108 1365777487.001000
+R80
+Z94 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_struct.vhd|
+R55
 R16
 !s100 bBiQLc5WiT4Y?>S>Ic2]V3
 !i10b 1
 Astruct
-R78
-R64
-R65
-R79
-R66
-R67
-R68
-R80
-R81
-R69
-R70
 R82
+R68
+R69
 R83
+R70
 R71
-DEx4 work 12 hookup_cache 0 22 3CbgYPH;jJGi[MW`9TEKf0
+R72
 R84
 R85
+R73
+R74
+R86
+R87
+R75
+DEx4 work 12 hookup_cache 0 22 3CbgYPH;jJGi[MW`9TEKf0
+R88
+R89
 R5
 R6
 R7
@@ -495,82 +569,83 @@ L40
 V>[cD0<hB;M;EPc[LE;c<m1
 R11
 32
-R89
-R90
-R91
-R51
+R93
+R80
+R94
+R55
 R16
 !s100 Nid@Q>cLcJmn3`L6ZiIQP3
 !i10b 1
 Ehookup_cache_v2
-Z92 w1364395601
+Z95 w1365773060
 R5
 R6
 R7
 R8
-Z93 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd
-Z94 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd
+Z96 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd
+Z97 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd
 l0
 L13
 VI:UF0HYW8G20GSg7J^gN_1
 R11
 32
-Z95 !s108 1364399202.648000
-Z96 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Rebecca/AppData/Local/Temp/Files3|
-Z97 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd|
-R51
+Z98 !s108 1365776661.644000
+Z99 !s90 -work|ADD_SingleCycle_lib|-nologo|-f|C:/Users/Rebecca/AppData/Local/Temp/Files1|
+Z100 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/hookup_cache_v2_struct.vhd|
+R55
 R16
 !s100 Gf7CjdUPaTf?SIADRzcUE1
 !i10b 1
 Astruct
-R84
-R85
-R78
-R64
-R65
-R79
-R66
-R67
+DEx19 add_singlecycle_lib 12 ram_delay_v3 0 22 AaI0S?5OV7zV9a0o_ISFj3
 R68
-R80
-R81
 R69
+DEx19 add_singlecycle_lib 12 datacache_v2 0 22 Cf@MRJMDe;mm@4QhHVTU]3
+DEx19 add_singlecycle_lib 17 cachedata_lols_v2 0 22 fXn?GGl;_;LfNgQ02`<lS2
 R70
-R82
-R83
 R71
+R72
+DEx19 add_singlecycle_lib 22 memory_statemachine_v2 0 22 RaVJ<]l75F9O^AkWGl6lG3
+DEx19 add_singlecycle_lib 20 inst_statemachine_v2 0 22 @PElOi67fn6=FH4VQgI`32
+R73
+R74
+DEx19 add_singlecycle_lib 19 data_statemachinev2 0 22 WU^]O5b_amd_g77dVM6^82
+R87
+R75
 DEx4 work 15 hookup_cache_v2 0 22 I:UF0HYW8G20GSg7J^gN_1
+R88
+R89
 R5
 R6
 R7
-l287
-L38
-VYZR>PWAO9MN6V`1Nhelbg3
+l305
+L40
+VI?TLfkK_=3XhafJ]kk6U>2
 R11
 32
-R95
-R96
-R97
-R51
+R98
+R99
+R100
+R55
 R16
-!s100 7^]X@YN]PHb]ChHM@VGS83
+!s100 Qce>LSIG3UZ9aEig95`5m2
 !i10b 1
 Eincrement
-Z98 w1360767264
+Z101 w1360767264
 R5
 R6
 R7
-R53
-Z99 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
-Z100 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
+R57
+Z102 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
+Z103 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd
 l0
 L14
 VP1n_GeN6O:b8kES;N3oAY2
-R56
+R60
 33
-Z101 !s108 1360774548.043000
-R58
-Z102 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|
+Z104 !s108 1360774548.043000
+R62
+Z105 !s107 C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/alu_aluarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Extendblock_Extendblockarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Increment_Incrementarch.vhd|C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|
 R15
 R16
 !s100 OOXgG;<UTIeCoJgW4HGnR3
@@ -583,31 +658,31 @@ DEx4 work 9 increment 0 22 P1n_GeN6O:b8kES;N3oAY2
 l21
 L20
 Vig<<>Q8BPRUmDdd8U>2FM3
-R56
+R60
 33
-R101
-R58
-R102
+R104
+R62
+R105
 R15
 R16
 !s100 =FgC;^S>29@aRI`e74l?B0
 !i10b 1
 Einst_statemachine
-Z103 w1364066535
+Z106 w1364066535
 R5
 R6
 R7
 R8
-Z104 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
-Z105 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
+Z107 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
+Z108 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd
 l0
 L14
 VS6bKb4m`[VPYz=[ibE;gM0
 R11
 33
-Z106 !s108 1364399202.475000
-Z107 !s90 -work|ADD_SingleCycle_lib|-nologo|-2008|-f|C:/Users/Rebecca/AppData/Local/Temp/Files2|
-Z108 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
+Z109 !s108 1365777389.567000
+R26
+Z110 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
 R15
 R16
 !s100 ig:o^c;CnmdL]B1]YY_P_1
@@ -622,29 +697,29 @@ L23
 VG5NH8RMda1]23_N]9ZOe`1
 R11
 33
-R106
-R107
-R108
+R109
+R26
+R110
 R15
 R16
 !s100 jARDahnfJ:>ONl0DWYH]`1
 !i10b 1
 Einst_statemachine_v2
-Z109 w1364525286
+Z111 w1364525286
 R5
 R6
 R7
 R8
-Z110 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd
-Z111 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd
+Z112 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd
+Z113 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd
 l0
 L14
 V@PElOi67fn6=FH4VQgI`32
 R11
 33
-Z112 !s108 1364529494.574000
-R13
-Z113 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_V2_Behavior.vhd|
+R25
+R26
+R27
 R15
 R16
 !s100 jj]HG1@mVZhK2dnC7EGej1
@@ -659,29 +734,29 @@ L26
 V8lc3NUhdXhHK;F76e9e]73
 R11
 33
-R112
-R13
-R113
+R25
+R26
+R27
 R15
 R16
 !s100 PM@B0W=;kg8jFAHEGMczQ3
 !i10b 1
 Ememory_statemachine
-Z114 w1364578426
+Z114 w1364577881
 R5
 R6
 R7
 R8
-Z115 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd
-Z116 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd
+Z115 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_Behavior.vhd
+Z116 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_Behavior.vhd
 l0
 L14
 V0XWX6EL74^O54ZVB6QaLV2
 R11
 33
-Z117 !s108 1364582029.359000
+R20
 R13
-Z118 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd|
+R21
 R15
 R16
 !s100 Z8Q>74[7E7<QaMfJkjEmi3
@@ -696,66 +771,66 @@ L22
 VAD]Ac<`S6Wi`^V?`1G95A3
 R11
 33
-R117
+R20
 R13
-R118
+R21
 R15
 R16
 !s100 J^I<l^YT=A0O[2kORDXgO0
 !i10b 1
 Ememory_statemachine_v2
-Z119 w1364761372
+Z117 w1365773040
 R5
 R6
 R7
 R8
-R115
-R116
+Z118 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd
+Z119 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd
 l0
 L14
-VOYkB;5TCVANZIOjjSi2Ci0
+VRaVJ<]l75F9O^AkWGl6lG3
 R11
 33
-Z120 !s108 1364764976.288000
+Z120 !s108 1365776661.495000
 R13
-R118
+Z121 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Memory_StateMachine_V2_Behavior.vhd|
 R15
 R16
-!s100 hE;R[>232h_a]3=]28mZK3
+!s100 lCSP9C9M8b7m@TIBA:IR50
 !i10b 1
 Abehavior
 R5
 R6
 R7
-DEx4 work 22 memory_statemachine_v2 0 22 OYkB;5TCVANZIOjjSi2Ci0
+DEx4 work 22 memory_statemachine_v2 0 22 RaVJ<]l75F9O^AkWGl6lG3
 l28
 L24
-VLf2P=dSRfEldg9NX6WhY@1
+V_^N^V65`VkPmah7ZD]jH^0
 R11
 33
 R120
 R13
-R118
+R121
 R15
 R16
-!s100 1cP28a3Nc;_JMzkl[RbK11
+!s100 `z2:RNf3JaU9miSc=aS4d3
 !i10b 1
 Emux2to1
-Z121 w1360100213
+Z122 w1360100213
 R5
 R6
 R7
 R8
-Z122 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
-Z123 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+Z123 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
+Z124 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd
 l0
 L14
 V1OS_HaOEonI?7aQ7jil0P0
 R11
 33
-Z124 !s108 1362447807.917000
+Z125 !s108 1362447807.917000
 R13
-Z125 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
+Z126 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Data_StateMachine_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ControlUnit_Behavior.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux2to1_mux2to1arch.vhd|C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/Inst_StateMachine_Behavior.vhd|
 R15
 R16
 !s100 LdBNjBaj6?QfE]Pc_Jl<h0
@@ -770,29 +845,29 @@ L22
 V@KdJZ>b6o^HgYKH<0:lnZ1
 R11
 33
-R124
-R13
 R125
+R13
+R126
 R15
 R16
 !s100 NBo:h<B28^dhZ;AA=EXOO2
 !i10b 1
 Emux4to1
-R98
+R101
 R5
 R6
 R7
-R53
-Z126 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
-Z127 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+R57
+Z127 8C:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
+Z128 FC:/Users/jwarchal/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/mux4to1_mux4to1arch.vhd
 l0
 L14
 V=84i0_47Z1HQ;c07MTd7z2
-R56
+R60
 33
-R101
-R58
-R102
+R104
+R62
+R105
 R15
 R16
 !s100 RC59e@AkWZ?GZ`N6kkCZO3
@@ -805,31 +880,31 @@ DEx4 work 7 mux4to1 0 22 =84i0_47Z1HQ;c07MTd7z2
 l23
 L22
 Vl6`gK8icbAe:0>@>=f`Q01
-R56
+R60
 33
-R101
-R58
-R102
+R104
+R62
+R105
 R15
 R16
 !s100 ;Z66AgGz0>z_VVeEhm3jB0
 !i10b 1
 Epc
-Z128 w1360881073
+Z129 w1360881073
 R5
 R6
 R7
 R8
-Z129 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
-Z130 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+Z130 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
+Z131 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd
 l0
 L14
 V;e>2Ok2OUHIzH;;9cNf000
 R11
 33
-Z131 !s108 1361549823.125000
+Z132 !s108 1361549823.125000
 R13
-Z132 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|
+Z133 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/PC_PCarch.vhd|
 R15
 R16
 !s100 aKT2z]6=aYUDQWl3>U<SW1
@@ -844,38 +919,38 @@ L21
 Vd1e_z^]_J=nNQUd;6=mIF0
 R11
 33
-R131
-R13
 R132
+R13
+R133
 R15
 R16
 !s100 P_VcWJ=Qj[[h_3k1AJOE92
 !i10b 1
 Eram_delay
-Z133 w1362625479
-R84
-R85
+Z134 w1362625479
+R88
+R89
 R5
 R6
 R7
 R8
-Z134 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd
-Z135 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd
+Z135 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd
+Z136 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd
 l0
 L19
 V8W0c@cfPo3j?=FD4jOiLk3
 R11
 32
-Z136 !s108 1364399202.087000
-R90
-Z137 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd|
-R51
+Z137 !s108 1365777389.206000
+R99
+Z138 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_behavior.vhd|
+R55
 R16
 !s100 Gj=UaJ;m4@AFn9_i<Q^mm1
 !i10b 1
 Abehavior
-R84
-R85
+R88
+R89
 R5
 R6
 R7
@@ -885,38 +960,38 @@ L32
 V?fkJ5kVgZ6bFd3NRIGDWb2
 R11
 32
-R136
-R90
 R137
-R51
+R99
+R138
+R55
 R16
 !s100 T11zVOm;P7h3L3KY9Al=11
 !i10b 1
 Eram_delay_v2
-Z138 w1365173320
-R84
-R85
+Z139 w1365173320
+R88
+R89
 R5
 R6
 R7
 R8
-Z139 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
-Z140 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
+Z140 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
+Z141 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd
 l0
 L19
 VPd=R3HDJ=RJLJ5XD6^Ue=1
 R11
 33
-Z141 !s108 1365176923.003000
+Z142 !s108 1365176923.003000
 R13
-Z142 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd|
+Z143 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_V2_Behavior.vhd|
 R15
 R16
 !s100 J2PJ45M=1YnP]ez;MKdTz0
 !i10b 1
 Abehavior
-R84
-R85
+R88
+R89
 R5
 R6
 R7
@@ -926,38 +1001,38 @@ L32
 VmT<]6=5PSiJGlaN=2IAU00
 R11
 33
-R141
-R13
 R142
+R13
+R143
 R15
 R16
 !s100 Z?K2JoQ`0OZGKIhH8gEMF1
 !i10b 1
 Eram_delay_v3
-Z143 w1365176421
-R84
-R85
+Z144 w1365176421
+R88
+R89
 R5
 R6
 R7
 R8
-Z144 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
-Z145 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
+Z145 8C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
+Z146 FC:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd
 l0
 L19
 VAaI0S?5OV7zV9a0o_ISFj3
 R11
 32
-Z146 !s108 1365180026.544000
-R76
-Z147 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd|
-R51
+Z147 !s108 1365776271.578000
+R99
+Z148 !s107 C:/Users/Rebecca/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/ram_delay_v3_behavior.vhd|
+R55
 R16
 !s100 CzDe_Pcj1jjgJULQRjOPN1
 !i10b 1
 Abehavior
-R84
-R85
+R88
+R89
 R5
 R6
 R7
@@ -967,29 +1042,29 @@ L32
 Vk7KDiMBUhSbg:J^H>kTHm0
 R11
 32
-R146
-R76
 R147
-R51
+R99
+R148
+R55
 R16
 !s100 MO:1BBSg?3GgO=TY;Y7Pz2
 !i10b 1
 Eregisterfile
-Z148 w1361205263
+Z149 w1361205263
 R5
 R6
 R7
-R45
-Z149 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
-Z150 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+R49
+Z150 8C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
+Z151 FC:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd
 l0
 L15
 VHQ@Jba?O40<bNWMaVmJ342
 R11
 33
-Z151 !s108 1361205268.780000
-R60
-Z152 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
+Z152 !s108 1361205268.780000
+R64
+Z153 !s107 C:/Users/Vincent/Documents/GitHub/ADD_SingleCycle/ADD_SingleCycle_lib/hdl/RegisterFile_Behavior.vhd|
 R15
 R16
 !s100 CkVjK^2=DgfDok22b9@F[2
@@ -1004,9 +1079,9 @@ L25
 V^]35M<>Ol9R=RTX@L0Bz=0
 R11
 33
-R151
-R60
 R152
+R64
+R153
 R15
 R16
 !s100 6g`TEWj^L;^M97U_QGz1g2
