@@ -236,7 +236,7 @@ duName "cachedata_lols_V2"
 elements [
 ]
 mwi 0
-uid 3020,0
+uid 3349,0
 )
 ]
 libraryRefs [
@@ -291,19 +291,19 @@ value "C:\\Users\\Rebecca\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_l
 )
 (vvPair
 variable "date"
-value "04/12/2013"
+value "04/15/2013"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "12"
+value "15"
 )
 (vvPair
 variable "entity_name"
@@ -431,7 +431,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "12:54:03"
+value "11:55:55"
 )
 (vvPair
 variable "unit"
@@ -9145,13 +9145,13 @@ portVis (PortSigDisplay
 archFileType "UNKNOWN"
 )
 *321 (SaComponent
-uid 3020,0
+uid 3349,0
 optionalChildren [
 *322 (CptPort
-uid 2996,0
+uid 3325,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 2997,0
+uid 3326,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9160,11 +9160,11 @@ fg "0,65535,0"
 xt "-12750,-21375,-12000,-20625"
 )
 tg (CPTG
-uid 2998,0
+uid 3327,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 2999,0
+uid 3328,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9183,10 +9183,10 @@ o 1
 )
 )
 *323 (CptPort
-uid 3000,0
+uid 3329,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3001,0
+uid 3330,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9195,11 +9195,11 @@ fg "0,65535,0"
 xt "-12750,-20375,-12000,-19625"
 )
 tg (CPTG
-uid 3002,0
+uid 3331,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3003,0
+uid 3332,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9218,10 +9218,10 @@ o 2
 )
 )
 *324 (CptPort
-uid 3004,0
+uid 3333,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3005,0
+uid 3334,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9230,11 +9230,11 @@ fg "0,65535,0"
 xt "-12750,-19375,-12000,-18625"
 )
 tg (CPTG
-uid 3006,0
+uid 3335,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3007,0
+uid 3336,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9252,10 +9252,10 @@ o 3
 )
 )
 *325 (CptPort
-uid 3008,0
+uid 3337,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3009,0
+uid 3338,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9264,11 +9264,11 @@ fg "0,65535,0"
 xt "-12750,-18375,-12000,-17625"
 )
 tg (CPTG
-uid 3010,0
+uid 3339,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3011,0
+uid 3340,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9287,10 +9287,10 @@ o 4
 )
 )
 *326 (CptPort
-uid 3012,0
+uid 3341,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3013,0
+uid 3342,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9299,11 +9299,11 @@ fg "0,65535,0"
 xt "-12750,-17375,-12000,-16625"
 )
 tg (CPTG
-uid 3014,0
+uid 3343,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3015,0
+uid 3344,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9321,10 +9321,10 @@ o 5
 )
 )
 *327 (CptPort
-uid 3016,0
+uid 3345,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3017,0
+uid 3346,0
 ro 90
 va (VaSet
 vasetType 1
@@ -9333,11 +9333,11 @@ fg "0,65535,0"
 xt "1000,-21375,1750,-20625"
 )
 tg (CPTG
-uid 3018,0
+uid 3347,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 3019,0
+uid 3348,0
 va (VaSet
 font "arial,8,0"
 )
@@ -9359,7 +9359,7 @@ o 6
 )
 ]
 shape (Rectangle
-uid 3021,0
+uid 3350,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -9370,12 +9370,12 @@ xt "-12000,-22000,1000,-16000"
 )
 oxt "0,0,8000,10000"
 ttg (MlTextGroup
-uid 3022,0
+uid 3351,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
 *328 (Text
-uid 3023,0
+uid 3352,0
 va (VaSet
 font "arial,8,1"
 )
@@ -9385,7 +9385,7 @@ blo "-9700,-15200"
 tm "BdLibraryNameMgr"
 )
 *329 (Text
-uid 3024,0
+uid 3353,0
 va (VaSet
 font "arial,8,1"
 )
@@ -9395,7 +9395,7 @@ blo "-9700,-14200"
 tm "CptNameMgr"
 )
 *330 (Text
-uid 3025,0
+uid 3354,0
 va (VaSet
 font "arial,8,1"
 )
@@ -9407,12 +9407,12 @@ tm "InstanceNameMgr"
 ]
 )
 ga (GenericAssociation
-uid 3026,0
+uid 3355,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 3027,0
+uid 3356,0
 text (MLText
-uid 3028,0
+uid 3357,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -9424,7 +9424,7 @@ elements [
 ]
 )
 viewicon (ZoomableIcon
-uid 3029,0
+uid 3358,0
 sl 0
 va (VaSet
 vasetType 1
@@ -13240,11 +13240,11 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,24,1601,900"
-viewArea "-77493,-42945,58766,21135"
+viewArea "-88625,-30084,47634,33996"
 cachedDiagramExtent "-103000,-51500,131000,120800"
 hasePageBreakOrigin 1
 pageBreakOrigin "-136000,-102000"
-lastUid 3029,0
+lastUid 3358,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
