@@ -46,6 +46,7 @@ BEGIN
          IF (we = '1') THEN --if the data for the specific instruction wasn't in memory then....
             --put the value from Main mem into the cache
             mw_ram_table(CONV_INTEGER(unsigned(addr))) <= din;
+         ELSE
          END IF;
          
          IF ( slicer = "11") THEN
@@ -58,9 +59,7 @@ BEGIN
           dtemp <= mw_ram_table(CONV_INTEGER(unsigned(addr))) ( 15 DOWNTO 0);
          END IF;
          
-      END IF;
-      
-     
+      END IF; 
      
    END PROCESS ram_p_proc;
    dout <= dtemp;

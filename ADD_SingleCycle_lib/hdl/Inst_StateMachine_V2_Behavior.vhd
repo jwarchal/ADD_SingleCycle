@@ -13,7 +13,7 @@
   
   ENTITY Inst_StateMachine_V2 IS
     PORT ( clock, ifilled: IN std_logic;
-           PC, instFromRAM: IN std_logic_vector (15 DOWNTO 0);
+           PC, instFromRAM : IN std_logic_vector (15 DOWNTO 0);
            instFromMem : IN std_logic_vector (63 DOWNTO 0);
            inst, addrToMem: OUT std_logic_vector (15 DOWNTO 0);
            MMdataToRAM: OUT std_logic_vector (63 DOWNTO 0);
@@ -29,6 +29,8 @@
     SIGNAL current_state, next_state: state := hit_state;
     SIGNAL tags: tagarray ;
     SIGNAL currentinst: std_logic_vector(15 DOWNTO 0);
+    --SIGNAL slicer : std_logic_vector (1 DOWNTO 0);
+    
     BEGIN
       
     PROCESS(clock)
@@ -78,8 +80,8 @@
               intwe <= '0';
               addr <= PC(5 DOWNTO 2);
               slicer <= PC(1 DOWNTO 0);
-              currentinst <= inst;
               inst <= instFromRAM;
+              currentinst <= inst;
               MMdataToRAM <= instFromMem;
             WHEN wait_state =>
               addrToMem <= PC;
