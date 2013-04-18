@@ -43,7 +43,6 @@ BEGIN
         
          IF (we = '1') THEN
             mw_ram_table(CONV_INTEGER(unsigned(addr))) <= din;
-         ELSE
          END IF;
          mw_addr_reg <= addr;
       END IF;

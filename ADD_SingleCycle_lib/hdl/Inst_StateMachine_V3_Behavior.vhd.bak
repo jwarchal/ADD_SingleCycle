@@ -77,11 +77,12 @@
               addrToMem <= PC;
               idelay <= '0';
               ireq <= '0';
-              intwe <= '0' after 50ns;
+              intwe <= '0';
               addr <= PC(5 DOWNTO 2);
               slicer <= PC(1 DOWNTO 0);
-              inst <= instFromRAM;
-              currentinst <= inst;
+              inst <= instFromRAM after 50ns;
+              --currentinst <= inst;
+              currentinst <= instFromRAM;
               MMdataToRAM <= instFromMem;
             WHEN wait_state =>
               addrToMem <= PC;
@@ -90,7 +91,7 @@
               intwe <= '1';
               addr <= PC(5 DOWNTO 2);
               slicer <= PC(1 DOWNTO 0);
-              inst <= currentinst;
+              inst <= instFromRAM; --currentinst
               MMdataToRAM <= instFromMem;
               tags(Conv_integer(unsigned(PC(5 DOWNTO 2)))) <= PC(15 DOWNTO 6);
             WHEN limbo_state =>
@@ -99,7 +100,7 @@
               ireq <= '1';
               intwe <= '1';
               addr <= PC(5 DOWNTO 2);
-              inst <= currentinst;
+              inst <= instFromRAM; --currentinst;
               MMdataToRAM <= instFromMem;
               tags(Conv_integer(unsigned(PC(5 DOWNTO 2)))) <= PC(15 DOWNTO 6);
           END CASE;
