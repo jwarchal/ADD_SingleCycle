@@ -203,15 +203,6 @@ mwi 0
 uid 2893,0
 )
 (Instance
-name "U_21"
-duLibraryName "ADD_SingleCycle_lib"
-duName "ram_delay"
-elements [
-]
-mwi 0
-uid 2931,0
-)
-(Instance
 name "U_20"
 duLibraryName "ADD_SingleCycle_lib"
 duName "Memory_StateMachine"
@@ -237,6 +228,15 @@ elements [
 ]
 mwi 0
 uid 3368,0
+)
+(Instance
+name "U_21"
+duLibraryName "ADD_SingleCycle_lib"
+duName "ram_delay"
+elements [
+]
+mwi 0
+uid 3458,0
 )
 ]
 libraryRefs [
@@ -291,19 +291,19 @@ value "C:\\Users\\Rebecca\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_l
 )
 (vvPair
 variable "date"
-value "04/12/2013"
+value "04/20/2013"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "12"
+value "20"
 )
 (vvPair
 variable "entity_name"
@@ -431,7 +431,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:38:04"
+value "00:31:51"
 )
 (vvPair
 variable "unit"
@@ -483,7 +483,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "83200,102000,93700,103000"
+xt "83200,102000,93500,103000"
 st "
 by %user on %dd %month %year
 "
@@ -7001,341 +7001,9 @@ portVis (PortSigDisplay
 archFileType "UNKNOWN"
 )
 *253 (SaComponent
-uid 2931,0
-optionalChildren [
-*254 (CptPort
-uid 2903,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2904,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "196250,45625,197000,46375"
-)
-tg (CPTG
-uid 2905,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 2906,0
-va (VaSet
-font "arial,8,0"
-)
-xt "198000,45500,199300,46500"
-st "rst"
-blo "198000,46300"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "rst"
-t "std_logic"
-o 1
-)
-)
-)
-*255 (CptPort
-uid 2907,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2908,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "196250,46625,197000,47375"
-)
-tg (CPTG
-uid 2909,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 2910,0
-va (VaSet
-font "arial,8,0"
-)
-xt "198000,46500,203000,47500"
-st "hDIn : (15:0)"
-blo "198000,47300"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "hDIn"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 2
-)
-)
-)
-*256 (CptPort
-uid 2911,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2912,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "196250,47625,197000,48375"
-)
-tg (CPTG
-uid 2913,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 2914,0
-va (VaSet
-font "arial,8,0"
-)
-xt "198000,47500,199200,48500"
-st "wr"
-blo "198000,48300"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "wr"
-t "std_logic"
-o 3
-)
-)
-)
-*257 (CptPort
-uid 2915,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2916,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "196250,48625,197000,49375"
-)
-tg (CPTG
-uid 2917,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 2918,0
-va (VaSet
-font "arial,8,0"
-)
-xt "198000,48500,199100,49500"
-st "rd"
-blo "198000,49300"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "rd"
-t "std_logic"
-o 4
-)
-)
-)
-*258 (CptPort
-uid 2919,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2920,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "211000,45625,211750,46375"
-)
-tg (CPTG
-uid 2921,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 2922,0
-va (VaSet
-font "arial,8,0"
-)
-xt "208500,45500,210000,46500"
-st "ack"
-ju 2
-blo "210000,46300"
-)
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "ack"
-t "std_logic"
-o 5
-)
-)
-)
-*259 (CptPort
-uid 2923,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2924,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "196250,49625,197000,50375"
-)
-tg (CPTG
-uid 2925,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 2926,0
-va (VaSet
-font "arial,8,0"
-)
-xt "198000,49500,203400,50500"
-st "hAddr : (15:0)"
-blo "198000,50300"
-)
-)
-thePort (LogicalPort
-decl (Decl
-n "hAddr"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 6
-)
-)
-)
-*260 (CptPort
-uid 2927,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2928,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "211000,46625,211750,47375"
-)
-tg (CPTG
-uid 2929,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 2930,0
-va (VaSet
-font "arial,8,0"
-)
-xt "204400,46500,210000,47500"
-st "hDOut : (15:0)"
-ju 2
-blo "210000,47300"
-)
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "hDOut"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 7
-)
-)
-)
-]
-shape (Rectangle
-uid 2932,0
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-lineColor "0,32896,0"
-lineWidth 2
-)
-xt "197000,45000,211000,51000"
-)
-oxt "0,0,8000,10000"
-ttg (MlTextGroup
-uid 2933,0
-ps "CenterOffsetStrategy"
-stg "VerticalLayoutStrategy"
-textVec [
-*261 (Text
-uid 2934,0
-va (VaSet
-font "arial,8,1"
-)
-xt "199800,51000,208200,52000"
-st "ADD_SingleCycle_lib"
-blo "199800,51800"
-tm "BdLibraryNameMgr"
-)
-*262 (Text
-uid 2935,0
-va (VaSet
-font "arial,8,1"
-)
-xt "199800,52000,203800,53000"
-st "ram_delay"
-blo "199800,52800"
-tm "CptNameMgr"
-)
-*263 (Text
-uid 2936,0
-va (VaSet
-font "arial,8,1"
-)
-xt "199800,53000,202000,54000"
-st "U_21"
-blo "199800,53800"
-tm "InstanceNameMgr"
-)
-]
-)
-ga (GenericAssociation
-uid 2937,0
-ps "EdgeToEdgeStrategy"
-matrix (Matrix
-uid 2938,0
-text (MLText
-uid 2939,0
-va (VaSet
-font "Courier New,8,0"
-)
-xt "204000,45000,204000,45000"
-)
-header ""
-)
-elements [
-]
-)
-viewicon (ZoomableIcon
-uid 2940,0
-sl 0
-va (VaSet
-vasetType 1
-fg "49152,49152,49152"
-)
-xt "197250,49250,198750,50750"
-iconName "VhdlFileViewIcon.png"
-iconMaskName "VhdlFileViewIcon.msk"
-ftype 10
-)
-ordering 1
-viewiconposition 0
-portVis (PortSigDisplay
-)
-archFileType "UNKNOWN"
-)
-*264 (SaComponent
 uid 3233,0
 optionalChildren [
-*265 (CptPort
+*254 (CptPort
 uid 3173,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7369,7 +7037,7 @@ o 1
 )
 )
 )
-*266 (CptPort
+*255 (CptPort
 uid 3177,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7403,7 +7071,7 @@ o 2
 )
 )
 )
-*267 (CptPort
+*256 (CptPort
 uid 3181,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7437,7 +7105,7 @@ o 3
 )
 )
 )
-*268 (CptPort
+*257 (CptPort
 uid 3185,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7471,7 +7139,7 @@ o 4
 )
 )
 )
-*269 (CptPort
+*258 (CptPort
 uid 3189,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7505,7 +7173,7 @@ o 5
 )
 )
 )
-*270 (CptPort
+*259 (CptPort
 uid 3193,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7540,7 +7208,7 @@ o 6
 )
 )
 )
-*271 (CptPort
+*260 (CptPort
 uid 3197,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7575,7 +7243,7 @@ o 7
 )
 )
 )
-*272 (CptPort
+*261 (CptPort
 uid 3201,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7610,7 +7278,7 @@ o 8
 )
 )
 )
-*273 (CptPort
+*262 (CptPort
 uid 3205,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7645,7 +7313,7 @@ o 9
 )
 )
 )
-*274 (CptPort
+*263 (CptPort
 uid 3209,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7681,7 +7349,7 @@ o 10
 )
 )
 )
-*275 (CptPort
+*264 (CptPort
 uid 3213,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7717,7 +7385,7 @@ o 11
 )
 )
 )
-*276 (CptPort
+*265 (CptPort
 uid 3217,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7753,7 +7421,7 @@ o 12
 )
 )
 )
-*277 (CptPort
+*266 (CptPort
 uid 3221,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7789,7 +7457,7 @@ o 13
 )
 )
 )
-*278 (CptPort
+*267 (CptPort
 uid 3225,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7826,7 +7494,7 @@ o 14
 )
 )
 )
-*279 (CptPort
+*268 (CptPort
 uid 3229,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7880,7 +7548,7 @@ uid 3235,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*280 (Text
+*269 (Text
 uid 3236,0
 va (VaSet
 font "arial,8,1"
@@ -7890,7 +7558,7 @@ st "ADD_SingleCycle_lib"
 blo "167950,53800"
 tm "BdLibraryNameMgr"
 )
-*281 (Text
+*270 (Text
 uid 3237,0
 va (VaSet
 font "arial,8,1"
@@ -7900,7 +7568,7 @@ st "Memory_StateMachine"
 blo "167950,54800"
 tm "CptNameMgr"
 )
-*282 (Text
+*271 (Text
 uid 3238,0
 va (VaSet
 font "arial,8,1"
@@ -7947,10 +7615,10 @@ portVis (PortSigDisplay
 )
 archFileType "UNKNOWN"
 )
-*283 (SaComponent
+*272 (SaComponent
 uid 3287,0
 optionalChildren [
-*284 (CptPort
+*273 (CptPort
 uid 3243,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7985,7 +7653,7 @@ o 1
 )
 )
 )
-*285 (CptPort
+*274 (CptPort
 uid 3247,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8019,7 +7687,7 @@ o 2
 )
 )
 )
-*286 (CptPort
+*275 (CptPort
 uid 3251,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8053,7 +7721,7 @@ o 3
 )
 )
 )
-*287 (CptPort
+*276 (CptPort
 uid 3255,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8088,7 +7756,7 @@ o 4
 )
 )
 )
-*288 (CptPort
+*277 (CptPort
 uid 3259,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8125,7 +7793,7 @@ o 5
 )
 )
 )
-*289 (CptPort
+*278 (CptPort
 uid 3263,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8162,7 +7830,7 @@ o 6
 )
 )
 )
-*290 (CptPort
+*279 (CptPort
 uid 3267,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8199,7 +7867,7 @@ o 7
 )
 )
 )
-*291 (CptPort
+*280 (CptPort
 uid 3271,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8235,7 +7903,7 @@ o 8
 )
 )
 )
-*292 (CptPort
+*281 (CptPort
 uid 3275,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8271,7 +7939,7 @@ o 9
 )
 )
 )
-*293 (CptPort
+*282 (CptPort
 uid 3279,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8307,7 +7975,7 @@ o 10
 )
 )
 )
-*294 (CptPort
+*283 (CptPort
 uid 3283,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8360,7 +8028,7 @@ uid 3289,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*295 (Text
+*284 (Text
 uid 3290,0
 va (VaSet
 font "arial,8,1"
@@ -8370,7 +8038,7 @@ st "ADD_SingleCycle_lib"
 blo "90300,66800"
 tm "BdLibraryNameMgr"
 )
-*296 (Text
+*285 (Text
 uid 3291,0
 va (VaSet
 font "arial,8,1"
@@ -8380,7 +8048,7 @@ st "ControlUnit"
 blo "90300,67800"
 tm "CptNameMgr"
 )
-*297 (Text
+*286 (Text
 uid 3292,0
 va (VaSet
 font "arial,8,1"
@@ -8427,10 +8095,10 @@ portVis (PortSigDisplay
 )
 archFileType "UNKNOWN"
 )
-*298 (SaComponent
+*287 (SaComponent
 uid 3368,0
 optionalChildren [
-*299 (CptPort
+*288 (CptPort
 uid 3320,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8464,7 +8132,7 @@ o 1
 )
 )
 )
-*300 (CptPort
+*289 (CptPort
 uid 3324,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8498,7 +8166,7 @@ o 2
 )
 )
 )
-*301 (CptPort
+*290 (CptPort
 uid 3328,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8533,7 +8201,7 @@ o 3
 )
 )
 )
-*302 (CptPort
+*291 (CptPort
 uid 3332,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8568,7 +8236,7 @@ o 4
 )
 )
 )
-*303 (CptPort
+*292 (CptPort
 uid 3336,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8603,7 +8271,7 @@ o 5
 )
 )
 )
-*304 (CptPort
+*293 (CptPort
 uid 3340,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8640,7 +8308,7 @@ o 6
 )
 )
 )
-*305 (CptPort
+*294 (CptPort
 uid 3344,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8677,7 +8345,7 @@ o 7
 )
 )
 )
-*306 (CptPort
+*295 (CptPort
 uid 3348,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8714,7 +8382,7 @@ o 8
 )
 )
 )
-*307 (CptPort
+*296 (CptPort
 uid 3352,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8751,7 +8419,7 @@ o 9
 )
 )
 )
-*308 (CptPort
+*297 (CptPort
 uid 3356,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8787,7 +8455,7 @@ o 10
 )
 )
 )
-*309 (CptPort
+*298 (CptPort
 uid 3360,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8823,7 +8491,7 @@ o 11
 )
 )
 )
-*310 (CptPort
+*299 (CptPort
 uid 3364,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8876,7 +8544,7 @@ uid 3370,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*311 (Text
+*300 (Text
 uid 3371,0
 va (VaSet
 font "arial,8,1"
@@ -8886,7 +8554,7 @@ st "ADD_SingleCycle_lib"
 blo "59300,22800"
 tm "BdLibraryNameMgr"
 )
-*312 (Text
+*301 (Text
 uid 3372,0
 va (VaSet
 font "arial,8,1"
@@ -8896,7 +8564,7 @@ st "Inst_StateMachine"
 blo "59300,23800"
 tm "CptNameMgr"
 )
-*313 (Text
+*302 (Text
 uid 3373,0
 va (VaSet
 font "arial,8,1"
@@ -8933,6 +8601,338 @@ vasetType 1
 fg "49152,49152,49152"
 )
 xt "56250,22250,57750,23750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+ordering 1
+viewiconposition 0
+portVis (PortSigDisplay
+)
+archFileType "UNKNOWN"
+)
+*303 (SaComponent
+uid 3458,0
+optionalChildren [
+*304 (CptPort
+uid 3430,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3431,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "196250,45625,197000,46375"
+)
+tg (CPTG
+uid 3432,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 3433,0
+va (VaSet
+font "arial,8,0"
+)
+xt "198000,45500,199300,46500"
+st "rst"
+blo "198000,46300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "rst"
+t "std_logic"
+o 1
+)
+)
+)
+*305 (CptPort
+uid 3434,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3435,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "196250,46625,197000,47375"
+)
+tg (CPTG
+uid 3436,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 3437,0
+va (VaSet
+font "arial,8,0"
+)
+xt "198000,46500,203000,47500"
+st "hDIn : (15:0)"
+blo "198000,47300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hDIn"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 2
+)
+)
+)
+*306 (CptPort
+uid 3438,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3439,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "196250,47625,197000,48375"
+)
+tg (CPTG
+uid 3440,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 3441,0
+va (VaSet
+font "arial,8,0"
+)
+xt "198000,47500,199200,48500"
+st "wr"
+blo "198000,48300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "wr"
+t "std_logic"
+o 3
+)
+)
+)
+*307 (CptPort
+uid 3442,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3443,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "196250,48625,197000,49375"
+)
+tg (CPTG
+uid 3444,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 3445,0
+va (VaSet
+font "arial,8,0"
+)
+xt "198000,48500,199100,49500"
+st "rd"
+blo "198000,49300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "rd"
+t "std_logic"
+o 4
+)
+)
+)
+*308 (CptPort
+uid 3446,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3447,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "211000,45625,211750,46375"
+)
+tg (CPTG
+uid 3448,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 3449,0
+va (VaSet
+font "arial,8,0"
+)
+xt "208500,45500,210000,46500"
+st "ack"
+ju 2
+blo "210000,46300"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "ack"
+t "std_logic"
+o 5
+)
+)
+)
+*309 (CptPort
+uid 3450,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3451,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "196250,49625,197000,50375"
+)
+tg (CPTG
+uid 3452,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 3453,0
+va (VaSet
+font "arial,8,0"
+)
+xt "198000,49500,203400,50500"
+st "hAddr : (15:0)"
+blo "198000,50300"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "hAddr"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 6
+)
+)
+)
+*310 (CptPort
+uid 3454,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 3455,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "211000,46625,211750,47375"
+)
+tg (CPTG
+uid 3456,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 3457,0
+va (VaSet
+font "arial,8,0"
+)
+xt "204400,46500,210000,47500"
+st "hDOut : (15:0)"
+ju 2
+blo "210000,47300"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "hDOut"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 7
+)
+)
+)
+]
+shape (Rectangle
+uid 3459,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "197000,45000,211000,51000"
+)
+oxt "0,0,8000,10000"
+ttg (MlTextGroup
+uid 3460,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*311 (Text
+uid 3461,0
+va (VaSet
+font "arial,8,1"
+)
+xt "199800,51000,208200,52000"
+st "ADD_SingleCycle_lib"
+blo "199800,51800"
+tm "BdLibraryNameMgr"
+)
+*312 (Text
+uid 3462,0
+va (VaSet
+font "arial,8,1"
+)
+xt "199800,52000,203800,53000"
+st "ram_delay"
+blo "199800,52800"
+tm "CptNameMgr"
+)
+*313 (Text
+uid 3463,0
+va (VaSet
+font "arial,8,1"
+)
+xt "199800,53000,202000,54000"
+st "U_21"
+blo "199800,53800"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 3464,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 3465,0
+text (MLText
+uid 3466,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "204000,45000,204000,45000"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 3467,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "197250,49250,198750,50750"
 iconName "VhdlFileViewIcon.png"
 iconMaskName "VhdlFileViewIcon.msk"
 ftype 10
@@ -9216,7 +9216,7 @@ pts [
 "86250,17000"
 ]
 )
-start &306
+start &295
 end &179
 sat 32
 eat 32
@@ -9257,7 +9257,7 @@ pts [
 "86250,15000"
 ]
 )
-start &307
+start &296
 end &177
 sat 32
 eat 32
@@ -9301,7 +9301,7 @@ pts [
 ]
 )
 start &181
-end &303
+end &292
 sat 32
 eat 32
 sty 1
@@ -9340,7 +9340,7 @@ pts [
 "86250,18000"
 ]
 )
-start &310
+start &299
 end &180
 sat 32
 eat 32
@@ -9458,8 +9458,8 @@ pts [
 "84250,59000"
 ]
 )
-start &304
-end &284
+start &293
+end &273
 sat 32
 eat 32
 sty 1
@@ -10361,7 +10361,7 @@ pts [
 "190750,21000"
 ]
 )
-start &287
+start &276
 end &246
 sat 32
 eat 32
@@ -10402,7 +10402,7 @@ pts [
 "121250,22000"
 ]
 )
-start &290
+start &279
 end &220
 sat 32
 eat 32
@@ -10443,7 +10443,7 @@ pts [
 "121250,51000"
 ]
 )
-start &289
+start &278
 end &230
 sat 32
 eat 32
@@ -10486,7 +10486,7 @@ pts [
 "2250,23000"
 ]
 )
-start &288
+start &277
 end &128
 sat 32
 eat 32
@@ -10528,7 +10528,7 @@ pts [
 "87250,40000"
 ]
 )
-start &293
+start &282
 end &195
 sat 32
 eat 32
@@ -10569,7 +10569,7 @@ pts [
 "52250,43000"
 ]
 )
-start &291
+start &280
 end &151
 sat 32
 eat 32
@@ -11013,7 +11013,7 @@ pts [
 "55250,80000"
 ]
 )
-start &292
+start &281
 end &158
 sat 32
 eat 32
@@ -11054,7 +11054,7 @@ pts [
 "55250,81000"
 ]
 )
-start &294
+start &283
 end &159
 sat 32
 eat 32
@@ -11093,7 +11093,7 @@ pts [
 "75750,83000"
 ]
 )
-start &286
+start &275
 end &169
 sat 32
 eat 32
@@ -11132,8 +11132,8 @@ pts [
 "74750,19000"
 ]
 )
-start &285
-end &308
+start &274
+end &297
 sat 32
 eat 32
 st 0
@@ -11250,8 +11250,8 @@ pts [
 "196250,47000"
 ]
 )
-start &278
-end &255
+start &267
+end &305
 sat 32
 eat 32
 sty 1
@@ -11291,8 +11291,8 @@ pts [
 "196250,50000"
 ]
 )
-start &279
-end &259
+start &268
+end &309
 sat 32
 eat 32
 sty 1
@@ -11331,8 +11331,8 @@ pts [
 "182750,44000"
 ]
 )
-start &256
-end &274
+start &306
+end &263
 sat 32
 eat 32
 st 0
@@ -11370,8 +11370,8 @@ pts [
 "182750,45000"
 ]
 )
-start &257
-end &275
+start &307
+end &264
 sat 32
 eat 32
 st 0
@@ -11411,8 +11411,8 @@ pts [
 "162250,48000"
 ]
 )
-start &258
-end &269
+start &308
+end &258
 sat 32
 eat 32
 st 0
@@ -11467,8 +11467,8 @@ pts [
 "211750,47000"
 ]
 )
-start &272
-end &260
+start &261
+end &310
 sat 32
 eat 32
 sty 1
@@ -11510,8 +11510,8 @@ pts [
 "74750,16000"
 ]
 )
-start &270
-end &305
+start &259
+end &294
 sat 32
 eat 32
 sty 1
@@ -11553,7 +11553,7 @@ pts [
 "75750,79000"
 ]
 )
-start &271
+start &260
 end &165
 sat 32
 eat 32
@@ -11596,7 +11596,7 @@ pts [
 "75750,80000"
 ]
 )
-start &273
+start &262
 end &166
 sat 32
 eat 32
@@ -11638,7 +11638,7 @@ pts [
 "75750,84000"
 ]
 )
-start &268
+start &257
 end &170
 sat 32
 eat 32
@@ -11679,7 +11679,7 @@ pts [
 "75750,85000"
 ]
 )
-start &267
+start &256
 end &171
 sat 32
 eat 32
@@ -11720,8 +11720,8 @@ pts [
 "74750,20000"
 ]
 )
-start &266
-end &309
+start &255
+end &298
 sat 32
 eat 32
 st 0
@@ -11761,8 +11761,8 @@ pts [
 "182750,46000"
 ]
 )
-start &300
-end &276
+start &289
+end &265
 sat 32
 eat 32
 st 0
@@ -11803,7 +11803,7 @@ pts [
 ]
 )
 start &157
-end &277
+end &266
 sat 32
 eat 32
 st 0
@@ -11902,7 +11902,7 @@ pts [
 ]
 )
 start &395
-end &302
+end &291
 sat 32
 eat 32
 sty 1
@@ -12035,7 +12035,7 @@ pts [
 "19000,-6000"
 ]
 )
-start &299
+start &288
 end &398
 sat 32
 eat 32
@@ -12424,7 +12424,7 @@ pts [
 "175000,-15000"
 ]
 )
-start &254
+start &304
 end &414
 sat 32
 eat 32
@@ -12463,7 +12463,7 @@ pts [
 "148000,-5996"
 ]
 )
-start &265
+start &254
 end &412
 sat 32
 eat 32
@@ -12504,7 +12504,7 @@ pts [
 ]
 )
 start &315
-end &301
+end &290
 sat 32
 eat 32
 sty 1
@@ -12645,12 +12645,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1601,876"
-viewArea "42130,-7068,186044,60612"
+windowSize "0,24,1601,900"
+viewArea "93612,-7100,237526,60580"
 cachedDiagramExtent "-3000,-47000,231000,103000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-68000,-51000"
-lastUid 3406,0
+lastUid 3467,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

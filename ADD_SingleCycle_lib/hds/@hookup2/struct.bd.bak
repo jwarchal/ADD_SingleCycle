@@ -395,7 +395,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:15:50"
+value "11:18:48"
 )
 (vvPair
 variable "unit"
@@ -447,7 +447,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "122200,98000,132600,99000"
+xt "122200,98000,132700,99000"
 st "
 by %user on %dd %month %year
 "
@@ -8504,7 +8504,7 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1601,876"
+windowSize "0,24,1601,900"
 viewArea "1100,-21100,146545,49960"
 cachedDiagramExtent "-65000,-48000,159000,99000"
 pageSetupInfo (PageSetupInfo
@@ -8518,7 +8518,7 @@ exportStdPackageRefs 1
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-68000,-51000"
-lastUid 1774,0
+lastUid 1797,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

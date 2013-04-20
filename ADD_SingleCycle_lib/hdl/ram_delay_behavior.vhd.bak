@@ -76,8 +76,8 @@ table(26) := To_stdlogicvector(X"BEA2");
 table(27) := To_stdlogicvector(X"E502");
 table(28) := To_stdlogicvector(X"E1FB");
 table(29) := To_stdlogicvector(X"E100");
-table(30) := To_stdlogicvector(X"0003");
-table(31) := To_stdlogicvector(X"0002");
+table(30) := To_stdlogicvector(X"0003"); --0003
+table(31) := To_stdlogicvector(X"0002"); --0002
 
 
           elsif (wr = '1' and rd = '0') then

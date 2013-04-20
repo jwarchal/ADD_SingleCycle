@@ -412,19 +412,19 @@ value "C:\\Users\\Rebecca\\Documents\\GitHub\\ADD_SingleCycle\\ADD_SingleCycle_l
 )
 (vvPair
 variable "date"
-value "04/12/2013"
+value "04/20/2013"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Sat"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Saturday"
 )
 (vvPair
 variable "dd"
-value "12"
+value "20"
 )
 (vvPair
 variable "entity_name"
@@ -552,7 +552,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:38:04"
+value "00:31:51"
 )
 (vvPair
 variable "unit"
@@ -756,7 +756,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "31200,50000,41700,51000"
+xt "31200,50000,41500,51000"
 st "
 by %user on %dd %month %year
 "
@@ -1370,6 +1370,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 397,0
+lastUid 420,0
 activeModelName "Symbol:CDM"
 )

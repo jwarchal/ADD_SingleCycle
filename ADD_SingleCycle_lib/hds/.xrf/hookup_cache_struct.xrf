@@ -277,7 +277,7 @@ VIEW struct.bd
 NO_GRAPHIC 255
 DESIGN @hookup_cache
 VIEW struct.bd
-GRAPHIC 2931,0 257 0 
+GRAPHIC 3458,0 257 0 
 DESIGN @hookup_cache
 VIEW struct.bd
 NO_GRAPHIC 266
@@ -326,7 +326,7 @@ VIEW struct.bd
 GRAPHIC 2273,0 283 0 
 DESIGN @hookup_cache
 VIEW struct.bd
-GRAPHIC 2931,0 284 0 
+GRAPHIC 3458,0 284 0 
 DESIGN @hookup_cache
 VIEW struct.bd
 NO_GRAPHIC 287
@@ -761,7 +761,7 @@ VIEW struct.bd
 GRAPHIC 1145,0 481 0 
 DESIGN @hookup_cache
 VIEW struct.bd
-GRAPHIC 2931,0 483 0 
+GRAPHIC 3458,0 483 0 
 DESIGN @hookup_cache
 VIEW struct.bd
 GRAPHIC 1934,0 485 0 
